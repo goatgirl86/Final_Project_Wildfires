@@ -7,6 +7,13 @@
 ## Project Overview
 
 ### Purpose
+**Why Analyze Natural Disasters?**  *Natural disasters affect us all!*
+- Goals
+    - Understand how the number, type, intensity and distribution of natural disasters has changed over time
+    - Use that knowledge to predict the impact of natural disasters in the future.
+- Hope / Vision
+    - Use natural disaster models to motivate people to take take action by minimizing their contributions to anthropogenic (man-made) climate change.
+
 
 ### Communication Plan
 Beginning on March 26, 2022, our group held weekly group meetings on Zoom.  In addition, we communicated more regularly through the following communication platforms.  
