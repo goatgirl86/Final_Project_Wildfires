@@ -38,6 +38,15 @@ Beginning on March 26, 2022, our group held weekly group meetings via Zoom.  In 
 - GitMind
 - GitHub
 
+## Questions to Investigate
+- Has the number of Natural Disasters per year changed over time?
+- Has the types of Natural Disasters changed over time?
+- Has the distribution of Natural Disasters changed over time?
+- Has the intensity of Natural Disasters changed over time?
+- Has the number of people affected by Natural Disasters changed over time?
+- Can future Natural Disasters (number, type, distribution, and intensity) be predicted using the data analyzed?
+- Can this data be combined with annual temperatures to determine a correlation between temperature and natural disasters?
+
 ## Code Snippets
 
 ## Results
