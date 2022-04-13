@@ -1,5 +1,5 @@
 # Natural_Disasters
-### k.E.G.d. (Katlin, Enzo, Graham, Danieli)
+### By: k.E.G.d. (Katlin, Enzo, Graham, Danieli)
 ## Project Overview
 ### Purpose
 ### Data Analyzed
