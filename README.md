@@ -32,7 +32,7 @@ An Analysis of Natural Disasters from 1900-2021
 - GitMind
 - Html
 - Google Colaboratory
-- Google Drive
+- Google Slides
 - Pandas / Python
 - PgAgmin (SQL)
 - Tableau
