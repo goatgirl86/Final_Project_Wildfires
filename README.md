@@ -16,7 +16,7 @@ Beginning on March 26, 2022, our group held weekly group meetings on Zoom.  In a
 - Email
 
 ### Data Analyzed
-- **All Natural Disasters 1900-2021 / EOSDIS**: https://www.kaggle.com/datasets/brsdincer/all-natural-disasters-19002021-eosdis?q=global+climate+change+in%3Adatasets
+- **All Natural Disasters 1900-2021 / EOSDIS** *(from kaggle)*: https://www.kaggle.com/datasets/brsdincer/all-natural-disasters-19002021-eosdis?q=global+climate+change+in%3Adatasets
     - Entire Dataset: 45 columns and 16,127 rows 
     - Data Analyzed 
         - Columns: Year, Disaster Group, Disaster Subgroup, Disaster Type, Disaster Subtype, Country, Continent, Total Deaths, Total Affected
