@@ -22,7 +22,8 @@ An Analysis of Natural Disasters from 1900-2021
     - Data Analyzed  
         - Columns (9): Year, Disaster Group, Disaster Subgroup, Disaster Type, Disaster Subtype, Country, Continent, Total Deaths, Total Affected
         - Rows: 11,617
-- **Questions to Investigate**
+        
+- **Questions Investigated**
     - Has the number of Natural Disasters per year changed over time?
     - Has the types of Natural Disasters changed over time?
     - Has the distribution of Natural Disasters changed over time?
