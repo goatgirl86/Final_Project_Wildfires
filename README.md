@@ -16,14 +16,9 @@ An Analysis of Natural Disasters from 1900-2021
 - Hope / Vision
     - Use natural disaster models to motivate people to take take action by minimizing their contributions to anthropogenic (man-made) climate change.
 
-### Data Analyzed
+### Source Data 
 - **All Natural Disasters 1900-2021 / EOSDIS** *(from kaggle)*: https://www.kaggle.com/datasets/brsdincer/all-natural-disasters-19002021-eosdis?q=global+climate+change+in%3Adatasets
-    - Entire Dataset: 45 columns and 16,127 rows 
-    - Data Analyzed  
-        - Columns (9): Year, Disaster Group, Disaster Subgroup, Disaster Type, Disaster Subtype, Country, Continent, Total Deaths, Total Affected
-        - Rows: 11,617
-        
-- **Questions Investigated**
+- **Questions We Hope to Answer**
     - Has the number of Natural Disasters per year changed over time?
     - Has the types of Natural Disasters changed over time?
     - Has the distribution of Natural Disasters changed over time?
@@ -32,7 +27,7 @@ An Analysis of Natural Disasters from 1900-2021
     - Can future Natural Disasters (number, type, distribution, and intensity) be predicted using the data analyzed?
     - Can this data be combined with annual temperatures to determine a correlation between temperature and natural disasters?
 
-### Programs, Applications and Processes Used
+### Technologies, Languages, Tools, and Algorithms Used
 - Google Colaboratory
 - Pandas / Python
 - PgAgmin (SQL)
@@ -47,7 +42,16 @@ Beginning on March 26, 2022, our group held weekly group meetings via Zoom.  In 
 - Cell Service (Phone/Text)
 - Email
 
-## Code Snippets
+## Data Exploration
+The "All Natural Disasters 1900-2021" dataset was downloaded from *kaggle* and explored using both Google Colab and Pandas. 
+- *Entire Dataset:* 45 columns; 16,127 rows 
+  
+Based on the data, it was determined that the data needed to be cleaned of columns and rows with large numbers of empty data cells. After cleaning, the dataset included the following columns and rows from which subsequent data analysis was performed.  
+- *Data Analyzed* 
+    - Columns (9): Year, Disaster Group, Disaster Subgroup, Disaster Type, Disaster Subtype, Country, Continent, Total Deaths, Total Affected
+    - Rows: 11,617
+
+## Data Analysis
 
 ## Results
 
