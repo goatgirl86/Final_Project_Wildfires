@@ -8,9 +8,9 @@
 
 ### Purpose
 
-### Communication Platforms
+### Communication Plan
+Beginning on March 26, 2022, our group held weekly group meetings on Zoom.  In addition, we communicated more regularly through the following communication platforms.  
 - Slack
-- Zoom
 - Google Drive
 - Cell Service (Phone/Text)
 - Email
