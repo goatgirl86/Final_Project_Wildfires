@@ -28,12 +28,14 @@ An Analysis of Natural Disasters from 1900-2021
     - Can this data be combined with annual temperatures to determine a correlation between temperature and natural disasters?
 
 ### Technologies, Languages, Tools, and Algorithms Used
+- GitHub
+- GitMind
+- Html
 - Google Colaboratory
+- Google Drive
 - Pandas / Python
 - PgAgmin (SQL)
 - Tableau
-- GitMind
-- GitHub
 
 ### Communication Plan
 Beginning on March 26, 2022, our group held weekly group meetings via Zoom.  In addition, we communicated more regularly using the following communication platforms.  
