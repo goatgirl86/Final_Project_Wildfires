@@ -1,4 +1,6 @@
-# the Disaster we live in: An Analysis of Natural Disasters from 1900-2021
+# the Disaster we live in
+An Analysis of Natural Disasters from 1900-2021
+
 ### By: k.E.G.d. (Katlin, Enzo, Graham, Danieli)
 
 ![image](https://user-images.githubusercontent.com/92705556/163100279-0a091a96-46f8-4579-9531-f9f4bac3e4e8.png)
