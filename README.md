@@ -1,4 +1,4 @@
-# The Disasters we live in
+# the Disasters we live in
 ### By: k.E.G.d. (Katlin, Enzo, Graham, Danieli)
 ## Project Overview
 ### Purpose
