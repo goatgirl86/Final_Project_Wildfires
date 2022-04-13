@@ -14,20 +14,19 @@
 - Hope / Vision
     - Use natural disaster models to motivate people to take take action by minimizing their contributions to anthropogenic (man-made) climate change.
 
-
-### Communication Plan
-Beginning on March 26, 2022, our group held weekly group meetings on Zoom.  In addition, we communicated more regularly through the following communication platforms.  
-- Slack
-- Google Drive
-- Cell Service (Phone/Text)
-- Email
-
 ### Data Analyzed
 - **All Natural Disasters 1900-2021 / EOSDIS** *(from kaggle)*: https://www.kaggle.com/datasets/brsdincer/all-natural-disasters-19002021-eosdis?q=global+climate+change+in%3Adatasets
     - Entire Dataset: 45 columns and 16,127 rows 
     - Data Analyzed  
         - Columns (9): Year, Disaster Group, Disaster Subgroup, Disaster Type, Disaster Subtype, Country, Continent, Total Deaths, Total Affected
         - Rows: 11,617
+
+### Communication Plan
+Beginning on March 26, 2022, our group held weekly group meetings via Zoom.  In addition, we communicated more regularly using the following communication platforms.  
+- Slack
+- Google Drive
+- Cell Service (Phone/Text)
+- Email
 
 ### Programs, Applications and Processes Used
 - Google Colaboratory
