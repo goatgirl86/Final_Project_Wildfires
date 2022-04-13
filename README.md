@@ -19,7 +19,7 @@ An Analysis of Natural Disasters from 1900-2021
 ### Source Data 
 - **All Natural Disasters 1900-2021 / EOSDIS** *(from kaggle)*: https://www.kaggle.com/datasets/brsdincer/all-natural-disasters-19002021-eosdis?q=global+climate+change+in%3Adatasets
 
-- Questions We Hope to Answer
+- **Questions We Hope to Answer**
     - Has the number of Natural Disasters per year changed over time?
     - Has the types of Natural Disasters changed over time?
     - Has the distribution of Natural Disasters changed over time?
