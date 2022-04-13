@@ -25,6 +25,7 @@ Beginning on March 26, 2022, our group held weekly group meetings on Zoom.  In a
 ### Programs, Applications and Processes Used
 - Google Colaboratory
 - Pandas / Python
+- PgAgmin (SQL)
 - Tableau
 - GitMind
 - GitHub
