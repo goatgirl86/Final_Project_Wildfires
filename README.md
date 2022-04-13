@@ -48,7 +48,7 @@ Beginning on March 26, 2022, our group held weekly group meetings via Zoom.  In 
 The "All Natural Disasters 1900-2021" dataset was downloaded from *kaggle* and explored using both Google Colab and Pandas. 
 - *Entire Dataset:* 45 columns; 16,127 rows 
   
-Based on the data, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty data cells/values. After cleaning, the dataset included the following columns and rows from which subsequent data analyses were performed.  
+Based on the data, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells/values. After cleaning, the dataset included the following columns and rows from which subsequent data analyses were performed.  
 - *Data Analyzed* 
     - Columns (9): Year, Disaster Group, Disaster Subgroup, Disaster Type, Disaster Subtype, Country, Continent, Total Deaths, Total Affected
     - Rows: 11,617
