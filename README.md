@@ -39,7 +39,7 @@ An Analysis of Natural Disasters from 1900-2021
 - Tableau
 
 ### Communication Plan
-Beginning on March 26, 2022, we held weekly group meetings via Zoom in addition to more frequent communication via the following platforms. Each group member actively participated in meetings, contributed to group discussions, sought to help other group members who were stuck or struggling, and played to their personal coding strengths to make the final product the best it could be.
+Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition to more frequent communication via the following platforms. Each group member actively participated in meetings, contributed to group discussions, sought to help other group members who were stuck or struggling, and played to their personal coding strengths to make the final product the best it could be.
 
 *Communication Platforms utilized for group discussions*
 - Slack
