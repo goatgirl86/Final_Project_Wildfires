@@ -22,13 +22,14 @@ An Analysis of Natural Disasters from 1900-2021
     - Data Analyzed  
         - Columns (9): Year, Disaster Group, Disaster Subgroup, Disaster Type, Disaster Subtype, Country, Continent, Total Deaths, Total Affected
         - Rows: 11,617
-
-### Communication Plan
-Beginning on March 26, 2022, our group held weekly group meetings via Zoom.  In addition, we communicated more regularly using the following communication platforms.  
-- Slack
-- Google Drive
-- Cell Service (Phone/Text)
-- Email
+- **Questions to Investigate**
+    - Has the number of Natural Disasters per year changed over time?
+    - Has the types of Natural Disasters changed over time?
+    - Has the distribution of Natural Disasters changed over time?
+    - Has the intensity of Natural Disasters changed over time?
+    - Has the number of people affected by Natural Disasters changed over time?
+    - Can future Natural Disasters (number, type, distribution, and intensity) be predicted using the data analyzed?
+    - Can this data be combined with annual temperatures to determine a correlation between temperature and natural disasters?
 
 ### Programs, Applications and Processes Used
 - Google Colaboratory
@@ -38,14 +39,12 @@ Beginning on March 26, 2022, our group held weekly group meetings via Zoom.  In 
 - GitMind
 - GitHub
 
-## Questions to Investigate
-- Has the number of Natural Disasters per year changed over time?
-- Has the types of Natural Disasters changed over time?
-- Has the distribution of Natural Disasters changed over time?
-- Has the intensity of Natural Disasters changed over time?
-- Has the number of people affected by Natural Disasters changed over time?
-- Can future Natural Disasters (number, type, distribution, and intensity) be predicted using the data analyzed?
-- Can this data be combined with annual temperatures to determine a correlation between temperature and natural disasters?
+### Communication Plan
+Beginning on March 26, 2022, our group held weekly group meetings via Zoom.  In addition, we communicated more regularly using the following communication platforms.  
+- Slack
+- Google Drive
+- Cell Service (Phone/Text)
+- Email
 
 ## Code Snippets
 
