@@ -12,7 +12,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 - Wildfires have the potential to harm property, livelihoods, and human health. 
 - Multiple studies have found that climate change has already led to an increase in wildfire season length, wildfire frequency, and burned area.
 
-- Colorado Stats *(from Colorado Division of Fire Prevention and Control)
+- Colorado Stats *(from Colorado Division of Fire Prevention and Control: https://dfpc.colorado.gov/wildfire-information-center/historical-wildfire-information)*
     - 4 of the 5 largest CO wildfires have occured since 2018
     - 20 of the top 20 largest CO wildfires have occured in the last 20 years
     
