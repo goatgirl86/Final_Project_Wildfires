@@ -3,30 +3,35 @@ An Analysis of Natural Disasters from 1900-2021
 
 ### By: k.E.G.d. (Katlin, Enzo, Graham, Danieli)
 
-![image](https://user-images.githubusercontent.com/92705556/163100279-0a091a96-46f8-4579-9531-f9f4bac3e4e8.png)
+![image](https://user-images.githubusercontent.com/92705556/164360475-80ad9556-bc81-4f68-b920-bccf89f7ddb6.png)
 
 
 ## Project Overview
 
 ### Purpose
-**Why Analyze Natural Disasters?**  *Natural disasters affect us all!*
-- Goals
-    - Understand how the number, type, intensity and distribution of natural disasters has changed over time
-    - Use that knowledge to predict the impact of natural disasters in the future.
-- Hope / Vision
-    - Use natural disaster models to motivate people to take take action by minimizing their contributions to anthropogenic (man-made) climate change.
+**Why Study Wildfires?**  *Wildfires affect us all!*
+- Wildfires have the potential to harm property, livelihoods, and human health. 
+- Multiple studies have found that climate change has already led to an increase in wildfire season length, wildfire frequency, and burned area.
+
+- Colorado Stats *(from Colorado Division of Fire Prevention and Control)
+    - 4 of the 5 largest CO wildfires have occured since 2018
+    - 20 of the top 20 largest CO wildfires have occured in the last 20 years
+    
+  ![image](https://user-images.githubusercontent.com/92705556/164361745-b2a8f5df-9c5e-4cca-8481-0344584ea7f7.png)
+
 
 ### Source Data 
-- **All Natural Disasters 1900-2021 / EOSDIS** *(from kaggle)*: https://www.kaggle.com/datasets/brsdincer/all-natural-disasters-19002021-eosdis?q=global+climate+change+in%3Adatasets
+- **U.S. Wildfire data (plus other attributes)** (*https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes*) 
 
-- **Questions We Hoped to Answer**
-    - Has the number of Natural Disasters per year changed over time?
-    - Has the types of Natural Disasters changed over time?
-    - Has the distribution of Natural Disasters changed over time?
-    - Has the intensity of Natural Disasters changed over time?
-    - Has the number of people affected by Natural Disasters changed over time?
-    - Can future Natural Disasters (number, type, distribution, and intensity) be predicted using the data analyzed?
-    - Can this data be combined with annual temperatures to determine a correlation between temperature and natural disasters?
+- **Questions to Investigate**
+    - Has the number of wildfires changed over time?
+    - Has the size of wildfires changed over time?
+    - Has the cause of wildfires changed over time?
+    - Has the timing (month) of wildfires changed over time?
+    - How does vegetation type impact the probability of ignition?
+    - How do temperature, wind, humidity, precipitation impact the probability of ignition?
+    - Does “remoteness” have an impact on wildfire ignition?
+
 
 ### Technologies, Languages, Tools, and Algorithms Used
 - GitHub
@@ -44,17 +49,15 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 *Communication Platforms utilized for group discussions*
 - Slack
 - Google Drive
-- Cell Service (Phone/Text)
-- Email
 
 ## Data Exploration
-The "All Natural Disasters 1900-2021" dataset was downloaded from *kaggle* and explored using both Google Colab and Pandas. 
-- *Entire Dataset:* 45 columns; 16,127 rows 
+The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *kaggle* and explored using both Google Colab and Pandas. 
+- *Entire Dataset:* 43 columns; 55,368 rows 
   
 Based on the data, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells/values. After cleaning, the dataset included the following columns and rows from which subsequent data analyses were performed.  
 - *Data Analyzed* 
-    - Columns (9): Year, Disaster Group, Disaster Subgroup, Disaster Type, Disaster Subtype, Country, Continent, Total Deaths, Total Affected
-    - Rows: 11,617
+    - Columns (): 
+    - Rows: 
 
 ## Data Analysis
 
