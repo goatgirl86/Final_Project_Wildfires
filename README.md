@@ -24,13 +24,13 @@ An Analysis of U.S. Wildfires from 1992-2015
 - **U.S. Wildfire data (plus other attributes)** (*https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes*) 
 
 ### Questions to Investigate
-    - Has the number of wildfires changed over time?
-    - Has the size of wildfires changed over time?
-    - Has the cause of wildfires changed over time?
-    - Has the timing (month) of wildfires changed over time?
-    - How does vegetation type impact the probability of ignition?
-    - How do temperature, wind, humidity, precipitation impact the probability of ignition?
-    - Does “remoteness” have an impact on wildfire ignition?
+-   Has the number of wildfires changed over time?
+-   Has the size of wildfires changed over time?
+-   Has the cause of wildfires changed over time?
+-   Has the timing (month) of wildfires changed over time?
+-   How does vegetation type impact the probability of ignition?
+-   How do temperature, wind, humidity, precipitation impact the probability of ignition?
+-   Does “remoteness” have an impact on wildfire ignition?
 
 
 ### Technologies, Languages, Tools, and Algorithms Used
