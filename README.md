@@ -39,7 +39,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 - Html
 - Google Slides
 - Pandas / Python
-- PgAgmin (SQL)
+- PgAgmin (PostgreSQL)
 - Tableau
 
 ### Communication Plan
