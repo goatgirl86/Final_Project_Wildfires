@@ -51,7 +51,10 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 - Slack
 - Zoom
 
-## Data Exploration
+## Dashboards & Google Slides
+
+## Data Exploration & Analysis Process
+### Data Exploration
 The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *kaggle* and explored using both Google Colab and Pandas. 
 - *Entire Dataset:* 43 columns; 55,368 rows 
   
@@ -60,8 +63,8 @@ Based on the data, it was determined that the data needed to be cleaned of colum
     - Columns (): 
     - Rows: 
 
-## Data Analysis
+### Database
 
-## Results
+### Data Analysis / Machine Learning Model
 
 ## Conclusions
