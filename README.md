@@ -7,7 +7,6 @@ An Analysis of U.S. Wildfires from 1992-2015
 
 
 ## Project Overview
-
 ### Purpose
 **Why Study Wildfires?**  *Wildfires affect us all!*
 - Wildfires have the potential to harm property, livelihoods, and human health. 
@@ -51,7 +50,13 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 - Slack
 - Zoom
 
-## Dashboards & Google Slides
+## Project Visualizations
+### Dashboards
+- Tableau:
+- Html App:
+
+### Google Slides Presentation
+
 
 ## Data Exploration & Analysis Process
 ### Data Exploration
