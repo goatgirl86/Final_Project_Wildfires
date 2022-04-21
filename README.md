@@ -3,7 +3,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 
 ### By: k.E.G.d. (Katlin, Enzo, Graham, Danieli)
 
-![image](https://user-images.githubusercontent.com/92705556/164360475-80ad9556-bc81-4f68-b920-bccf89f7ddb6.png)
+![image](https://user-images.githubusercontent.com/92705556/164362996-733acdf8-498c-4ec8-83fc-886dc000c433.png)
 
 
 ## Project Overview
