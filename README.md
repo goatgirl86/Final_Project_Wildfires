@@ -1,5 +1,5 @@
-# the Disaster we live in 
-An Analysis of Natural Disasters from 1900-2021
+# Scorched!
+An Analysis of U.S. Wildfires from 1992-2015
 
 ### By: k.E.G.d. (Katlin, Enzo, Graham, Danieli)
 
