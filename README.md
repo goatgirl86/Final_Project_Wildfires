@@ -23,7 +23,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 ### Source Data 
 - **U.S. Wildfire data (plus other attributes)** (*https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes*) 
 
-- **Questions to Investigate**
+### Questions to Investigate
     - Has the number of wildfires changed over time?
     - Has the size of wildfires changed over time?
     - Has the cause of wildfires changed over time?
