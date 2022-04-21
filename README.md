@@ -54,7 +54,7 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *kaggle* and explored using both Google Colab and Pandas. 
 - *Entire Dataset:* 43 columns; 55,368 rows 
   
-Based on the data, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells/values. After cleaning, the dataset included the following columns and rows from which subsequent data analyses were performed.  
+Based on the data, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. After cleaning, the dataset included the following columns and rows from which subsequent data analyses were performed.  
 - *Data Analyzed* 
     - Columns (): 
     - Rows: 
