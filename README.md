@@ -57,7 +57,6 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 
 ### Google Slides Presentation
 
-
 ## Data Exploration & Analysis Process
 ### Data Exploration
 The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *kaggle* and explored using both Google Colab and Pandas. 
@@ -65,8 +64,8 @@ The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *ka
   
 Based on the data, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. After cleaning, the dataset included the following columns and rows from which the database was created and subsequent data analyses were performed.  
 - *Data Analyzed* 
-    - Columns (): 
-    - Rows: 
+    - Columns: 27 
+    - Rows: 13,752
 
 ### Database
 
