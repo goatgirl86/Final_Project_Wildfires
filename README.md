@@ -57,6 +57,7 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 - Html App:
 
 ### Google Slides Presentation
+- https://docs.google.com/presentation/d/1k6_nFs06r_e-iALVW8RSOxMYcdh0ALGk/edit?usp=sharing&ouid=108250606024172523210&rtpof=true&sd=true
 
 ## Data Exploration & Analysis Process
 ### Data Exploration
