@@ -65,7 +65,7 @@ The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *ka
 - *Entire Dataset:* 43 columns; 55,368 rows 
   
 Based on the data, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. After cleaning, the dataset included the following columns and rows from which the database was created and subsequent data analyses were performed.  
-- *Data Analyzed:* 27 Columns, 13,752 rows 
+- *Data Analyzed:* 27 Columns; 13,752 rows 
 
 ### Database
 
