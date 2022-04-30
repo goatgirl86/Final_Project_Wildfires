@@ -1,1 +1,1 @@
-# Natural_Disasters
+# Wildfires
