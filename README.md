@@ -40,6 +40,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 - Pandas / Python
 - PgAgmin (PostgreSQL)
 - Tableau
+- VSCode
 
 ### Communication Plan
 Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition to more frequent communication via the following platforms. Each group member actively participated in meetings, contributed to group discussions, sought to help other group members who were stuck or struggling, and played to their personal coding strengths to make the final product the best it could be.
@@ -56,6 +57,7 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 - Html App:
 
 ### Google Slides Presentation
+- *https://docs.google.com/presentation/d/1k6_nFs06r_e-iALVW8RSOxMYcdh0ALGk/edit?usp=sharing&ouid=108250606024172523210&rtpof=true&sd=true*
 
 ## Data Exploration & Analysis Process
 ### Data Exploration
@@ -63,9 +65,7 @@ The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *ka
 - *Entire Dataset:* 43 columns; 55,368 rows 
   
 Based on the data, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. After cleaning, the dataset included the following columns and rows from which the database was created and subsequent data analyses were performed.  
-- *Data Analyzed* 
-    - Columns: 27 
-    - Rows: 13,752
+- *Data Analyzed:* 27 Columns; 13,752 rows 
 
 ### Database
 
