@@ -72,13 +72,14 @@ The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *ka
 - *Entire Dataset:* 43 columns; 55,367 rows 
   
 **Data Preprocessing**
+
 Based on the original dataset, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. In addition, some of the columns required reclassification based on data type and/or binning to reduce number of unique values. In the end, the data was reduced to 13,138 rows and 18 columns.  
 
-Example of Data that needed to be cleaned/removed (putout_time is a string, '-1.000' values in weather columns, multiple '0' values)
+**Cleaning DF** *Example of Data that needed to be cleaned/removed (putout_time is a string, '-1.000' values in weather columns, multiple '0' values)*
 
 ![image](https://user-images.githubusercontent.com/92705556/166401401-c87669e4-9566-478c-9c48-6acccc5d442f.png)
 
-*Columns kept: 'fire_id', 'fire_size', 'fire_cause', 'latitude', 'longitude', 'state', 'discovery_month', 'Temp_pre_30', 'Temp_pre_15', 'Temp_pre_7', 'Wind_pre_30', 'Wind_pre_15', 'Wind_pre_7', 'Hum_pre_30', 'Hum_pre_15', 'Hum_pre_7', 'year', 'putout_time'*
+**Final Cleaned DF** *Columns kept: 'fire_id', 'fire_size', 'fire_cause', 'latitude', 'longitude', 'state', 'discovery_month', 'Temp_pre_30', 'Temp_pre_15', 'Temp_pre_7', 'Wind_pre_30', 'Wind_pre_15', 'Wind_pre_7', 'Hum_pre_30', 'Hum_pre_15', 'Hum_pre_7', 'year', 'putout_time'*
 
 ![image](https://user-images.githubusercontent.com/92705556/166401152-29aa583b-8636-4aa1-8222-330468401cd4.png)
 
