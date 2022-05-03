@@ -74,6 +74,10 @@ The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *ka
 **Data Preprocessing**
 Based on the original dataset, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. In addition, some of the columns required reclassification based on data type and/or binning to reduce number of unique values. In the end, the data was reduced to 13,138 rows and 18 columns.  
 
+Example of Data that needed to be cleaned/removed (putout_time is a string, '-1.000' values in weather columns, multiple '0' values)
+
+![image](https://user-images.githubusercontent.com/92705556/166401401-c87669e4-9566-478c-9c48-6acccc5d442f.png)
+
 *Columns kept: 'fire_id', 'fire_size', 'fire_cause', 'latitude', 'longitude', 'state', 'discovery_month', 'Temp_pre_30', 'Temp_pre_15', 'Temp_pre_7', 'Wind_pre_30', 'Wind_pre_15', 'Wind_pre_7', 'Hum_pre_30', 'Hum_pre_15', 'Hum_pre_7', 'year', 'putout_time'*
 
 ![image](https://user-images.githubusercontent.com/92705556/166401152-29aa583b-8636-4aa1-8222-330468401cd4.png)
@@ -82,10 +86,15 @@ Based on the original dataset, it was determined that the data needed to be clea
 ### Database
 To create our Database, we chose to use PgAdmin.  Within our database, we have four tables that are all connected through a common field: 'fire_id'.  Using SQLAlchemy and Python, all relevant data within the four tables can be queried and joined for subsequent analysis. QuickDBD was used to create the Entity Relationship Diagram (ERD).
 
-![image](https://user-images.githubusercontent.com/92705556/166400571-a305d969-8008-481b-8605-4421eb7fafdc.png)
+![image](https://user-images.githubusercontent.com/92705556/166401232-ca7e9e18-e3d7-4309-aa73-6b5c6f1bf58b.png)
 
-## Data Analysis / Machine Learning Model
-coming soon
+
+## Data Analysis & Machine Learning
+
+
+
+### Machine Learning
+Because our initial dataset did not have paired inputs and known binary outcomes, we elected to use Unsupervised Machine Learning rather than Supervised Machine Learning for our analysis. Unsupervised Machine Learning allows for clustering of similar datapoints to see patterns in data groupings.   
 
 ## Conclusions
 comming soon
