@@ -23,14 +23,9 @@ An Analysis of U.S. Wildfires from 1992-2015
 - **U.S. Wildfire data (plus other attributes)** (*https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes*) 
 
 ### Questions to Investigate
--   Has the number of wildfires changed over time?
--   Has the size of wildfires changed over time?
--   Has the cause of wildfires changed over time?
--   Has the timing (month) of wildfires changed over time?
--   How does vegetation type impact the probability of ignition?
--   How do temperature, wind, humidity, precipitation impact the probability of ignition?
--   Does “remoteness” have an impact on wildfire ignition?
-
+-   Has the number, size, and cause of wildfires changed over time?
+-   Has the timing and distribution of wildfires changed over time?
+-   What temperature, wind, and humidity conditions are most likely to result in large wildfires?
 
 ### Technologies, Languages, Tools, and Algorithms Used
 - Data Storage
@@ -47,6 +42,7 @@ An Analysis of U.S. Wildfires from 1992-2015
     - Visual Studio Code (VSCode)
     - PgAdmin (PostgreSQL)
     - SQLAlchemy
+    - Quick DBD for ERD development
 - Dashboard
     - HTML / Javascript
     - Google Slides
@@ -64,8 +60,8 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 
 ## Project Visualizations
 ### Dashboards
-- Tableau:
-- Html App:
+- Tableau: coming soon
+- HTML App: coming soon
 
 ### Google Slides Presentation
 - *https://docs.google.com/presentation/d/1k6_nFs06r_e-iALVW8RSOxMYcdh0ALGk/edit?usp=sharing&ouid=108250606024172523210&rtpof=true&sd=true*
@@ -73,13 +69,23 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 ## Data Exploration & Analysis Process
 ### Data Exploration
 The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *kaggle* and explored using both Google Colab and Pandas. 
-- *Entire Dataset:* 43 columns; 55,366 rows 
+- *Entire Dataset:* 43 columns; 55,367 rows 
   
-Based on the original dataset, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros so that the database and subsequent data analyses could be performed.  
-- *Data Analyzed:* 18 Columns; 13,137 rows 
+**Data Preprocessing**
+Based on the original dataset, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. In addition, some of the columns required reclassification based on data type and/or binning to reduce number of unique values. In the end, the data was reduced to 13,138 rows and 18 columns.  
+
+*Columns kept: 'fire_id', 'fire_size', 'fire_cause', 'latitude', 'longitude', 'state', 'discovery_month', 'Temp_pre_30', 'Temp_pre_15', 'Temp_pre_7', 'Wind_pre_30', 'Wind_pre_15', 'Wind_pre_7', 'Hum_pre_30', 'Hum_pre_15', 'Hum_pre_7', 'year', 'putout_time'*
+
+![image](https://user-images.githubusercontent.com/92705556/166401152-29aa583b-8636-4aa1-8222-330468401cd4.png)
+
 
 ### Database
+To create our Database, we chose to use PgAdmin.  Within our database, we have four tables that are all connected through a common field: 'fire_id'.  Using SQLAlchemy and Python, all relevant data within the four tables can be queried and joined for subsequent analysis. QuickDBD was used to create the Entity Relationship Diagram (ERD).
 
-### Data Analysis / Machine Learning Model
+![image](https://user-images.githubusercontent.com/92705556/166400571-a305d969-8008-481b-8605-4421eb7fafdc.png)
+
+## Data Analysis / Machine Learning Model
+coming soon
 
 ## Conclusions
+comming soon
