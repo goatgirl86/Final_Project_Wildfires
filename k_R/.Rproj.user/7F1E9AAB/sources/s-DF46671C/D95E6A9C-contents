@@ -1,0 +1,3 @@
+
+
+>lm(fire_size ~ Temp_pre_30 + Hum_pre_30 + Wind_pre_30 + putout_time, data=table) #generate multiple line
