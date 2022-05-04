@@ -1,0 +1,3 @@
+table <- read.csv(file='../Resources/temps_to_7.csv',check.names=F,stringsAsFactors = F)
+
+total_summary <- summarize(table, mean(Temp_pre_30),median(Temp_pre_30),var(Temp_pre_30),sd(Temp_pre_30))
