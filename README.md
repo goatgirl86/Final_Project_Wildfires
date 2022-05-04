@@ -41,7 +41,6 @@ An Analysis of U.S. Wildfires from 1992-2015
     - Python / Pandas
     - Visual Studio Code (VSCode)
     - PgAdmin (PostgreSQL)
-    - SQLAlchemy
     - Quick DBD for ERD development
 - Dashboard
     - HTML / Javascript
@@ -85,7 +84,7 @@ Based on the original dataset, it was determined that the data needed to be clea
 
 
 ### Database
-To create our Database, we chose to use PgAdmin.  Within our database, we have four tables that are all connected through a common field: 'fire_id'.  Using SQLAlchemy and Python, all relevant data within the four tables can be queried and joined for subsequent analysis. QuickDBD was used to create the Entity Relationship Diagram (ERD).
+To create our Database, we chose to use PgAdmin.  Within our database, we have four tables that are all connected through a common field: 'fire_id'. All relevant data within the four tables can be queried and joined for subsequent analysis. QuickDBD was used to create the Entity Relationship Diagram (ERD).
 
 ![image](https://user-images.githubusercontent.com/92705556/166401232-ca7e9e18-e3d7-4309-aa73-6b5c6f1bf58b.png)
 
