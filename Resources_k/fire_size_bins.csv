@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 fire_id,fire_size,fire_cause,latitude,longitude,state,discovery_month,Temp_pre_30,Temp_pre_15,Temp_pre_7,Wind_pre_30,Wind_pre_15,Wind_pre_7,Hum_pre_30,Hum_pre_15,Hum_pre_7,year,putout_time,fire_size_bin
 3,1.0,Debris Burning,39.6414,-119.3083,NV,Jun,16.27596717,18.99618138,18.1425641,4.054982415,3.398329356,3.671282051,44.77842907,37.14081146,35.35384615,2005,0,Teacup
 24,40.0,Arson,31.43518075,-88.99948898,MS,Apr,13.46861925,15.06722689,15.60479042,2.038268156,1.7379213480000002,1.775903614,57.99720670000001,56.74719101,59.61445783,1999,0,Mini
