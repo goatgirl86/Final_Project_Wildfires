@@ -23,24 +23,30 @@ An Analysis of U.S. Wildfires from 1992-2015
 - **U.S. Wildfire data (plus other attributes)** (*https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes*) 
 
 ### Questions to Investigate
--   Has the number of wildfires changed over time?
--   Has the size of wildfires changed over time?
--   Has the cause of wildfires changed over time?
--   Has the timing (month) of wildfires changed over time?
--   How does vegetation type impact the probability of ignition?
--   How do temperature, wind, humidity, precipitation impact the probability of ignition?
--   Does “remoteness” have an impact on wildfire ignition?
-
+-   Has the number, size, and cause of wildfires changed over time?
+-   Has the timing and distribution of wildfires changed over time?
+-   What temperature, wind, and humidity conditions are most likely to result in large wildfires?
 
 ### Technologies, Languages, Tools, and Algorithms Used
-- GitHub
-- GitMind (ERD creation)
-- Html
-- Google Slides
-- Pandas / Python
-- PgAgmin (PostgreSQL)
-- Tableau
-- VSCode
+- Data Storage
+   - GitHub
+- Data Preprocessing
+    - Python / Pandas
+    - Visual Studio Code (VSCode)
+- Data Analysis
+    - Python / Pandas
+    - Visual Studio Code (VSCode)
+    - RStudio
+- Database Management
+    - Python / Pandas
+    - Visual Studio Code (VSCode)
+    - PgAdmin (PostgreSQL)
+    - Quick DBD for ERD development
+- Dashboard
+    - HTML / Javascript
+    - Google Slides
+    - Tableau
+    - VSCode
 
 ### Communication Plan
 Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition to more frequent communication via the following platforms. Each group member actively participated in meetings, contributed to group discussions, sought to help other group members who were stuck or struggling, and played to their personal coding strengths to make the final product the best it could be.
@@ -53,8 +59,8 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 
 ## Project Visualizations
 ### Dashboards
-- Tableau:
-- Html App:
+- Tableau: coming soon
+- HTML App: coming soon
 
 ### Google Slides Presentation
 - *https://docs.google.com/presentation/d/1k6_nFs06r_e-iALVW8RSOxMYcdh0ALGk/edit?usp=sharing&ouid=108250606024172523210&rtpof=true&sd=true*
@@ -62,13 +68,33 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 ## Data Exploration & Analysis Process
 ### Data Exploration
 The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *kaggle* and explored using both Google Colab and Pandas. 
-- *Entire Dataset:* 43 columns; 55,368 rows 
+- *Entire Dataset:* 43 columns; 55,367 rows 
   
-Based on the data, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. After cleaning, the dataset included the following columns and rows from which the database was created and subsequent data analyses were performed.  
-- *Data Analyzed:* 24 Columns; 15,331 rows 
+**Data Preprocessing**
+
+Based on the original dataset, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. In addition, some of the columns required reclassification based on data type and/or binning to reduce number of unique values. In the end, the data was reduced to 13,138 rows and 18 columns.  
+
+**Cleaning DF** *Example of Data that needed to be cleaned/removed (putout_time is a string, '-1.000' values in weather columns, multiple '0' values)*
+
+![image](https://user-images.githubusercontent.com/92705556/166401401-c87669e4-9566-478c-9c48-6acccc5d442f.png)
+
+**Final Cleaned DF** *Columns kept: 'fire_id', 'fire_size', 'fire_cause', 'latitude', 'longitude', 'state', 'discovery_month', 'Temp_pre_30', 'Temp_pre_15', 'Temp_pre_7', 'Wind_pre_30', 'Wind_pre_15', 'Wind_pre_7', 'Hum_pre_30', 'Hum_pre_15', 'Hum_pre_7', 'year', 'putout_time'*
+
+![image](https://user-images.githubusercontent.com/92705556/166401152-29aa583b-8636-4aa1-8222-330468401cd4.png)
+
 
 ### Database
+To create our Database, we chose to use PgAdmin.  Within our database, we have four tables that are all connected through a common field: 'fire_id'. All relevant data within the four tables can be queried and joined for subsequent analysis. QuickDBD was used to create the Entity Relationship Diagram (ERD).
 
-### Data Analysis / Machine Learning Model
+![image](https://user-images.githubusercontent.com/92705556/166401232-ca7e9e18-e3d7-4309-aa73-6b5c6f1bf58b.png)
+
+
+## Data Analysis & Machine Learning
+
+
+
+### Machine Learning
+Because our initial dataset did not have paired inputs and known binary outcomes, we elected to use Unsupervised Machine Learning rather than Supervised Machine Learning for our analysis. Unsupervised Machine Learning allows for clustering of similar datapoints to see patterns in data groupings.   
 
 ## Conclusions
+comming soon
