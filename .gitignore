@@ -1,6 +1,4 @@
 # Byte-compiled / optimized / DLL files
-config.py
-
 __pycache__/
 *.py[cod]
 *$py.class
@@ -129,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+#Add config file
+config.py
