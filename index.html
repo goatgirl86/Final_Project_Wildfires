@@ -16,7 +16,39 @@
 <!-- </head> -->
 
 <head>
- 
+
+
+<!-- text with video for jumbotron -->
+<style>
+.container{
+  height: 400px;
+  width: 100vw;
+  position: relative;
+}
+.container iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.container h1{
+  mix-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 10rem;
+  background-color: #000;
+  color: #fff;
+}
+</style>
+<div class="container">
+    <iframe width="100%" src="" frameborder="0"></iframe>
+    <h1>Wildfires of the U.S 1992-2015</h1>
+</div>  
+
+
+<div class="container"><div class="jumbotron"> </div> 
 <div class="jumbotron"> 
     <div class="'container">
         <div class="row">
@@ -65,11 +97,13 @@
     }
     
     </script>
+</div>
 </div>  
     </div>
         </div>
             </div>
 
+<!-- paragraph -->
 <body class="bg-dark">
     <div class="wrapper">
         <nav class="navbar narbar-dark bg-dark navbar-expand-lg">
@@ -79,6 +113,7 @@
             <p>Wildfires are a common natural disaster that occurs in forest, grassland, brushland, etc. Some forests need wildfires to pollenate their plants and the fires help clear out the underbrush and prevent bigger uncontrolled fires in the future. 
                 Unfortunately more than four out of every five wildfires are caused by people. Due to that, not only does it harm our homes, but puts our natural environments in danger. 
                  </p>
+        <!-- Powerpoint slides -->
         <div class="responsive-google-slides">
             <iframe
                 src="https://docs.google.com/presentation/d/1k6_nFs06r_e-iALVW8RSOxMYcdh0ALGk/edit?usp=sharing&ouid=118286415124215393464&rtpof=true&sd=true"></iframe>
@@ -88,7 +123,8 @@
 
 </div>
 
-<div class="container-fluid" style="color: firebrick;">
+<!-- interactive data -->
+<!-- <div class="container-fluid" style="color: firebrick;">
     <div class="row">
         <div class="col-md-3">
             <form class="bg-dark">
@@ -106,11 +142,9 @@
                         <label for="fire_cause">Enter Fire Cause</label>
                         <input type="text" placeholder="Lightning, Accidental, etc" id="fire_cause" class="form-control" />
                     </li>   
-
                 </ul>
             </form>
         </div>
-
 <div class="col-md-9">
     <table class="table table-striped" style="color:white">
         <thead>
@@ -128,7 +162,6 @@
 </div>
 </div>
 </div> 
-
 <div class="container-fluid" style="color: firebrick;">
     <div class="row">
         <div class="col-md-3">
@@ -147,11 +180,9 @@
                         <label for="fire_cause">Enter Fire Cause</label>
                         <input type="text" placeholder="Lightning, Accidental, etc" id="fire_cause" class="form-control" />
                     </li>   
-
                 </ul>
             </form>
         </div>
-
 <div class="col-md-9">
     <table class="table table-striped" style="color:white">
         <thead>
@@ -169,7 +200,6 @@
 </div>
 </div>
 </div> 
-
 <div class="container-fluid" style="color: firebrick;">
     <div class="row">
         <div class="col-md-3">
@@ -188,11 +218,9 @@
                         <label for="fire_cause">Enter Fire Cause</label>
                         <input type="text" placeholder="Lightning, Accidental, etc" id="fire_cause" class="form-control" />
                     </li>   
-
                 </ul>
             </form>
         </div>
-
 <div class="col-md-9">
     <table class="table table-striped" style="color:white">
         <thead>
@@ -209,18 +237,53 @@
     </table>
 </div>
 </div>
-</div> 
+</div>  -->
 
+
+<!-- link for predict -->
+<a href='/predict' class='button'>PREDICT YOURSELF</a>
+
+
+    <!-- link for fire web -->
     <div class="container_fluid">
         <div class="row">
-            <div class="col-md-4">
-                <h3 style="color: white;">Our interactive data</h3>
+            <div class="col-md-4" style="color: maroon;">
+                <h3>For more information on wildfires, please visit <a href= "https://inciweb.nwcg.gov/">InciWeb</a></h3>
             </div>
             <div class="col-md-8" style="color: white;">
                 <p>Link to Enzo's Tableau</p>
 
-                <div class="col-md-8" style="color: white;">
-                    <p>Link to git hub</p>                
+                
+<!-- Button GitHub link -->
+<style>
+    .button {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button:hover {
+  background-color: #f44336;
+  color: white;
+}
+</style>                    
+<button class="button button">
+<a href="https://github.com/goatgirl86/Wildfires" target="_blank">K.E.G.d GitHub</a></button>  
+
                 
             </div>
         </div>
