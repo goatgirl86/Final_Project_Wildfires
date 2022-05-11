@@ -121,131 +121,33 @@
         <div class="col-md-6">
             <br><br>
         <div class="responsive-google-slides">
-            <iframe
-                src="https://docs.google.com/presentation/d/1k6_nFs06r_e-iALVW8RSOxMYcdh0ALGk/edit?usp=sharing&ouid=118286415124215393464&rtpof=true&sd=true"
-                frameborder="0" width="760" height="369" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTPIIj_A8wvZbm350PZftNdbA08DmOXRZz3gUmwhSuN8swREboHxmPrP9_u3ZS_3B4E9zgTLIYxnofC/embed?start=false&loop=false&delayms=3000" 
+            frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         </div>         
         </div>
     </div>
     <br><br><br>
 </div>
 
-<!-- interactive data -->
-<!-- <div class="container-fluid" style="color: firebrick;">
-    <div class="row">
-        <div class="col-md-3">
-            <form class="bg-dark">
-                <p>Filter Search for Temp, Wind, and Hum pre 30</p>
-                <ul class="list-group bg-dark">
-                    <li class="list-group-item bg-dark">
-                        <label for="year">Enter Year</label>
-                        <input type="text" placeholder="1992-2015" id="year" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="state">Enter State</label>
-                        <input type="text" placeholder="State Initials" id="state" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="fire_cause">Enter Fire Cause</label>
-                        <input type="text" placeholder="Lightning, Accidental, etc" id="fire_cause" class="form-control" />
-                    </li>   
-                </ul>
-            </form>
-        </div>
-<div class="col-md-9">
-    <table class="table table-striped" style="color:white">
-        <thead>
-            <tr>
-                <th>Year</th>
-                <th>State</th>
-                <th>Fire Cause</th>
-                <th>30 Temperature</th>
-                <th>30 Wind</th>
-                <th>30 Humidity</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-</div>
-</div>
-</div> 
-<div class="container-fluid" style="color: firebrick;">
-    <div class="row">
-        <div class="col-md-3">
-            <form class="bg-dark">
-                <p>Filter Search for Temp, Wind, and Hum pre 15</p>
-                <ul class="list-group bg-dark">
-                    <li class="list-group-item bg-dark">
-                        <label for="year">Enter Year</label>
-                        <input type="text" placeholder="1992-2015" id="year" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="state">Enter State</label>
-                        <input type="text" placeholder="State Initials" id="state" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="fire_cause">Enter Fire Cause</label>
-                        <input type="text" placeholder="Lightning, Accidental, etc" id="fire_cause" class="form-control" />
-                    </li>   
-                </ul>
-            </form>
-        </div>
-<div class="col-md-9">
-    <table class="table table-striped" style="color:white">
-        <thead>
-            <tr>
-                <th>Year</th>
-                <th>State</th>
-                <th>Fire Cause</th>
-                <th>15 Temperature</th>
-                <th>15 Wind</th>
-                <th>15 Humidity</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-</div>
-</div>
-</div> 
-<div class="container-fluid" style="color: firebrick;">
-    <div class="row">
-        <div class="col-md-3">
-            <form class="bg-dark">
-                <p>Filter Search for Temp, Wind, and Hum pre 7</p>
-                <ul class="list-group bg-dark">
-                    <li class="list-group-item bg-dark">
-                        <label for="year">Enter Year</label>
-                        <input type="text" placeholder="1992-2015" id="year" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="state">Enter State</label>
-                        <input type="text" placeholder="State Initials" id="state" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="fire_cause">Enter Fire Cause</label>
-                        <input type="text" placeholder="Lightning, Accidental, etc" id="fire_cause" class="form-control" />
-                    </li>   
-                </ul>
-            </form>
-        </div>
-<div class="col-md-9">
-    <table class="table table-striped" style="color:white">
-        <thead>
-            <tr>
-                <th>Year</th>
-                <th>State</th>
-                <th>Fire Cause</th>
-                <th>7 Temperature</th>
-                <th>7 Wind</th>
-                <th>7 Humidity</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-</div>
-</div>
-</div>  -->
 
+<!-- Celsius to Fahrenheit converter -->
+<div style="color:white">
+<h2>Temperature Converter</h2>
+<p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+}
+</script>
+</div>
 
 <!-- button for predict -->
  <style>
@@ -290,7 +192,7 @@
     }
 </style>
 <button class="button2" style="vertical-align:middle">
-<a href='/predict'></a><span>Fire ML </span></a></button>
+<a href='/predict'><span>Fire ML </span></a></button>
     <!-- <a href='/predict' class='button2'>Fire ML</a> -->
 
 
