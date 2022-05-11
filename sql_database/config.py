@@ -1,1 +1,0 @@
-db_password = "R3dsh1ba"
