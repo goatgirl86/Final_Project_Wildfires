@@ -16,7 +16,40 @@
 <!-- </head> -->
 
 <head>
- 
+
+
+<!-- text with video for jumbotron -->
+<!-- <style>
+.container{
+  height: 400px;
+  width: 100vw;
+  position: relative;
+}
+.container iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.container h1{
+  mix-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 10rem;
+  background-color: #000;
+  color: #fff;
+}
+</style>
+<div class="container">
+    <iframe width="100%" src="static\images\fire_background_loop2_videvo2.mp4" frameborder="0"></iframe>
+    <h1 class="title">Wildfires of the U.S 1992-2015</h1>
+</div>   -->
+
+
+<!-- Jumbotro with pic slides -->
+<div class="container"><div class="jumbotron"> </div> 
 <div class="jumbotron"> 
     <div class="'container">
         <div class="row">
@@ -65,162 +98,144 @@
     }
     
     </script>
+</div>
 </div>  
     </div>
         </div>
             </div>
 
+<!-- paragraph -->
 <body class="bg-dark">
     <div class="wrapper">
         <nav class="navbar narbar-dark bg-dark navbar-expand-lg">
             <a class="navbar-brand" href="index.html"></a>
         </nav>
         <div class="col-md-4" style="color: white;">
+            <p>  </p>
             <p>Wildfires are a common natural disaster that occurs in forest, grassland, brushland, etc. Some forests need wildfires to pollenate their plants and the fires help clear out the underbrush and prevent bigger uncontrolled fires in the future. 
                 Unfortunately more than four out of every five wildfires are caused by people. Due to that, not only does it harm our homes, but puts our natural environments in danger. 
                  </p>
+ 
+ 
+        <!-- Powerpoint slides -->
+        <div class="col-md-6">
+            <br><br>
         <div class="responsive-google-slides">
-            <iframe
-                src="https://docs.google.com/presentation/d/1k6_nFs06r_e-iALVW8RSOxMYcdh0ALGk/edit?usp=sharing&ouid=118286415124215393464&rtpof=true&sd=true"></iframe>
+            <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTPIIj_A8wvZbm350PZftNdbA08DmOXRZz3gUmwhSuN8swREboHxmPrP9_u3ZS_3B4E9zgTLIYxnofC/embed?start=false&loop=false&delayms=3000" 
+            frameborder="0" width="640" height="389" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
         </div>         
         </div>
     </div>
-
+    <br><br><br>
 </div>
 
-<div class="container-fluid" style="color: firebrick;">
-    <div class="row">
-        <div class="col-md-3">
-            <form class="bg-dark">
-                <p>Filter Search for Temp, Wind, and Hum pre 30</p>
-                <ul class="list-group bg-dark">
-                    <li class="list-group-item bg-dark">
-                        <label for="year">Enter Year</label>
-                        <input type="text" placeholder="1992-2015" id="year" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="state">Enter State</label>
-                        <input type="text" placeholder="State Initials" id="state" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="fire_cause">Enter Fire Cause</label>
-                        <input type="text" placeholder="Lightning, Accidental, etc" id="fire_cause" class="form-control" />
-                    </li>   
 
-                </ul>
-            </form>
-        </div>
+<!-- Celsius to Fahrenheit converter -->
+<div style="color:white">
+<h2>Temperature Converter</h2>
+<p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
 
-<div class="col-md-9">
-    <table class="table table-striped" style="color:white">
-        <thead>
-            <tr>
-                <th>Year</th>
-                <th>State</th>
-                <th>Fire Cause</th>
-                <th>30 Temperature</th>
-                <th>30 Wind</th>
-                <th>30 Humidity</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
+<p>
+  <label>Celsius</label>
+  <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+</p>
+<p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+
+<script>
+function temperatureConverter(valNum) {
+  valNum = parseFloat(valNum);
+  document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+}
+</script>
 </div>
-</div>
-</div> 
 
-<div class="container-fluid" style="color: firebrick;">
-    <div class="row">
-        <div class="col-md-3">
-            <form class="bg-dark">
-                <p>Filter Search for Temp, Wind, and Hum pre 15</p>
-                <ul class="list-group bg-dark">
-                    <li class="list-group-item bg-dark">
-                        <label for="year">Enter Year</label>
-                        <input type="text" placeholder="1992-2015" id="year" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="state">Enter State</label>
-                        <input type="text" placeholder="State Initials" id="state" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="fire_cause">Enter Fire Cause</label>
-                        <input type="text" placeholder="Lightning, Accidental, etc" id="fire_cause" class="form-control" />
-                    </li>   
+<!-- button for predict -->
+ <style>
+    .button2 {
+      display: inline-block;
+      border-radius: 4px;
+      background-color: #f44336;
+      border: none;
+      color: #FFFFFF;
+      text-align: center;
+      font-size: 28px;
+      padding: 20px;
+      width: 200px;
+      transition: all 0.5s;
+      cursor: pointer;
+      margin: 5px;
+    }
+    
+    .button2 span {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      transition: 0.5s;
+    }
+    
+    .button2 span:after {
+      content: '\00bb';
+      position: absolute;
+      opacity: 0;
+      top: 0;
+      right: -20px;
+      transition: 0.5s;
+    }
+    
+    .button2:hover span {
+      padding-right: 25px;
+    }
+    
+    .button2:hover span:after {
+      opacity: 1;
+      right: 0;
+    }
+</style>
+<button class="button2" style="vertical-align:middle">
+<a href='/predict'><span>Fire ML </span></a></button>
+    <!-- <a href='/predict' class='button2'>Fire ML</a> -->
 
-                </ul>
-            </form>
-        </div>
 
-<div class="col-md-9">
-    <table class="table table-striped" style="color:white">
-        <thead>
-            <tr>
-                <th>Year</th>
-                <th>State</th>
-                <th>Fire Cause</th>
-                <th>15 Temperature</th>
-                <th>15 Wind</th>
-                <th>15 Humidity</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-</div>
-</div>
-</div> 
-
-<div class="container-fluid" style="color: firebrick;">
-    <div class="row">
-        <div class="col-md-3">
-            <form class="bg-dark">
-                <p>Filter Search for Temp, Wind, and Hum pre 7</p>
-                <ul class="list-group bg-dark">
-                    <li class="list-group-item bg-dark">
-                        <label for="year">Enter Year</label>
-                        <input type="text" placeholder="1992-2015" id="year" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="state">Enter State</label>
-                        <input type="text" placeholder="State Initials" id="state" class="form-control" />
-                    </li>
-                    <li class="list-group-item bg-dark">
-                        <label for="fire_cause">Enter Fire Cause</label>
-                        <input type="text" placeholder="Lightning, Accidental, etc" id="fire_cause" class="form-control" />
-                    </li>   
-
-                </ul>
-            </form>
-        </div>
-
-<div class="col-md-9">
-    <table class="table table-striped" style="color:white">
-        <thead>
-            <tr>
-                <th>Year</th>
-                <th>State</th>
-                <th>Fire Cause</th>
-                <th>7 Temperature</th>
-                <th>7 Wind</th>
-                <th>7 Humidity</th>
-            </tr>
-        </thead>
-        <tbody></tbody>
-    </table>
-</div>
-</div>
-</div> 
-
+    <!-- link for fire web -->
     <div class="container_fluid">
         <div class="row">
-            <div class="col-md-4">
-                <h3 style="color: white;">Our interactive data</h3>
+            <div class="col-md-4" style="color: #f44336;">
+                <h3>For more information on wildfires, please visit <a href= "https://inciweb.nwcg.gov/" target="_blank">InciWeb</a></h3>
             </div>
             <div class="col-md-8" style="color: white;">
                 <p>Link to Enzo's Tableau</p>
 
-                <div class="col-md-8" style="color: white;">
-                    <p>Link to git hub</p>                
+                
+<!-- Button GitHub link -->
+<style>
+    .button1 {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button1 {
+  background-color: #f44336; 
+  color: black; 
+  border: 2px solid white;
+}
+
+.button1:hover {
+  background-color: white;
+  color: #f44336;
+}
+</style>                    
+<button class="button1 button1">
+<a href="https://github.com/goatgirl86/Wildfires" target="_blank">K.E.G.d GitHub</a></button>  
+
                 
             </div>
         </div>
