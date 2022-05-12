@@ -25,7 +25,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 ### Questions to Investigate
 -   Has the number, size, and cause of wildfires changed over time?
 -   Has the timing and distribution of wildfires changed over time?
--   What temperature, wind, and humidity conditions are most likely to result in large wildfires?
+-   What temperature, wind, and humidity conditions are most likely to result in wildfires at least 50 acres or larger?
 
 ### Technologies, Languages, Tools, and Algorithms Used
 - Data Storage
@@ -97,4 +97,4 @@ To create our Database, we chose to use PgAdmin.  Within our database, we have f
 Because our initial dataset did not have paired inputs and known binary outcomes, we elected to use Unsupervised Machine Learning rather than Supervised Machine Learning for our analysis. Unsupervised Machine Learning allows for clustering of similar datapoints to see patterns in data groupings.   
 
 ## Conclusions
-comming soon
+coming soon
