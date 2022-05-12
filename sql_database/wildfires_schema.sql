@@ -80,3 +80,24 @@ FROM fire_category AS fc
         ON (fc.fire_id = fi.fire_id)
     INNER JOIN weather_data AS wd 
         ON (fc.fire_id = wd.fire_id);
+
+
+-- Create fire_cause Lightning table
+SELECT fire_id, fire_cause, discovery_month
+INTO lightning_table
+FROM wildfire_details_7
+WHERE fire_cause = (Lightning);
+
+-- Create table for Medium sized fires 
+SELECT fire_id, discovery_month, "Temp_pre_7", "Wind_pre_7", fire_size_bin_no
+INTO medium_fire
+FROM wildfire_details_7 
+WHERE fire_size_bin = ('Medium');
+
+-- Number of fires by size_bin_no
+SELECT COUNT(fi.fire_id), fc.fire_size_bin_no
+FROM fire_info AS fi 
+LEFT JOIN fire_category AS fc 
+on fi.fire_id = fc.fire_id
+GROUP BY fc.fire_size_bin_no
+ORDER BY fc.fire_size_bin_no;
