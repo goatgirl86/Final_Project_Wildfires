@@ -86,7 +86,7 @@ Based on the original dataset, it was determined that the data needed to be clea
 ### Database
 To create our Database, we chose to use PgAdmin.  Within our database, we have four tables that are all connected through a common field: 'fire_id'. All relevant data within the four tables can be queried and joined for subsequent analysis. QuickDBD was used to create the Entity Relationship Diagram (ERD).
 
-![image](https://user-images.githubusercontent.com/92705556/166401232-ca7e9e18-e3d7-4309-aa73-6b5c6f1bf58b.png)
+![image](https://user-images.githubusercontent.com/92705556/167992926-9e43c1b5-547e-432f-90e7-badf56cf6f97.png)
 
 
 ## Data Analysis & Machine Learning
