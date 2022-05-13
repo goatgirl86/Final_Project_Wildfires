@@ -103,4 +103,15 @@ To make the dashboard, we used our knowledge of HTML and Javascript to create a 
 
 
 ## Conclusions
-coming soon
+Just as predicting the weather is notoroiously challenging even for the the professionals, predicting wildfires is also difficult due to varying weather conditions and unpredictable human behavior.  Once a fire sparks, the ability of it to be contained quickly depends not only on weather but also on response times, resource allocation and capacity, and much more.  
+
+By predicting whether or not a fire will grow beyond a “Medium” size, first responders may address
+- Asset relocation
+- Early containment
+- Set possible evacuation areas.
+
+### Determining fire size is essential as the climate change crisis now creates conditions that are only deteriorating and causing worse destruction.
+With this fire prediction tool we hope to provide new information that can help assist fire prevention teams with distribution of assets and even help them to request more resources from local and federal programs. Using the tableau map visualizations will also help determine areas that are highly affected and need attention on a growing basis. 
+
+**Climate change affects us all and needs to be a topic of discussion at all levels of government and public forum.** Tools like this one that are easy to understand and bring pertinent issues to the forefront arew needed to bring us all in the fight for a more stable future.
+
