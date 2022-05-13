@@ -14,7 +14,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 **Why Study Wildfires?**  *Wildfires affect us all!*
 - Wildfires have the potential to harm property, livelihoods, and human health. 
 - Climate change has already led to an increase in wildfire season length, wildfire frequency, and burned area.  It is bound to lead to further 
-- Colorado Wildfire Stats *(from Colorado Division of Fire Prevention and Control: https://dfpc.colorado.gov/wildfire-information-center/historical-wildfire-information*
+- **Colorado Wildfire Stats**: *from Colorado Division of Fire Prevention and Control: https://dfpc.colorado.gov/wildfire-information-center/historical-wildfire-information*
     - 4 of the 5 largest CO wildfires have occured since 2018
     - The top 20 largest CO wildfires have occured in the last 20 years
 
@@ -31,7 +31,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 - **Data Preprocessing**: Python, VSCode, PgAdmin
 - **Data Analysis**: Python, VSCode, RStudio
 - **Database Management**: Python, VSCode, PgAdmin (PostgreSQL), SQL Alchemy, Quick DBD for ERD development
-- **Dashboard / Web App**: Javascript, Python, Google Slides, Tableau, VSCode
+- **Dashboard / Web App**: Javascript, Python, Google Slides, Tableau, VSCode, Flask
 
 ### Communication Plan
 Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition to more frequent communication via the following platforms. Each group member actively participated in meetings, contributed to group discussions, sought to help other group members who were stuck or struggling, and played to their personal coding strengths to make the final product the best it could be.
@@ -43,7 +43,6 @@ The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *ka
 - *Entire Dataset:* 43 columns; 55,367 rows 
   
 ### Data Preprocessing
-
 Based on the original dataset, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. 'Putout_time'required reclassification of the data type from string to date, and 'fire_cause' was binned to reduce number of unique values. 
 - *Cleaned Data: 13,138 rows and 18 columns* 
 
@@ -86,7 +85,6 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 
 ![image](https://user-images.githubusercontent.com/92705556/168187077-49326184-59f4-4a25-a4ed-b9abe56baf0e.png)
 
-
 ## Database
 To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our database, we have four main tables that are all connected through a common field: 'fire_id'. The original four tables were: fire_category, fire_info, fire_location, and weather_data. Using SQLAlchemy and Python, we then queried and joined information from the four original tables to create new tables.
 
@@ -99,6 +97,9 @@ To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our dat
 ***Sreenshot 8**: Code showing SQL Alchemy connection with database and query / join of data from original tables into new dataframe*
 
 ![image](https://user-images.githubusercontent.com/92705556/168187328-59b19e08-9a2e-4397-bdbd-a15376612bc4.png)
+
+## Dashboard
+To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows a user to run user inputs through our Machine Learning model to predict whether a medium-sized fire or larger will result in the next 7 days.  
 
 
 ## Conclusions
