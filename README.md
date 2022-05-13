@@ -40,7 +40,7 @@ Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition
 
 ## Data Exploration
 The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *kaggle* and explored using both Google Colab and Pandas. 
-- *Entire Dataset:* 43 columns; 55,367 rows 
+- *Entire Dataset: 43 columns; 55,367 rows* 
   
 ### Data Preprocessing
 Based on the original dataset, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells, null values, and zeros. 'Putout_time'required reclassification of the data type from string to date, and 'fire_cause' was binned to reduce number of unique values. 
