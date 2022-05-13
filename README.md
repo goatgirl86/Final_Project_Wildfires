@@ -79,7 +79,7 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 
 ***Sreenshot 5**: Supervised Machine Learning Accuracy Results (using OneHot Encoder)*
 
-![image](https://user-images.githubusercontent.com/92705556/168186992-d12066cf-aabe-48bb-8a47-6bea3a5d1f07.png)
+![image](https://user-images.githubusercontent.com/92705556/168201343-9b222c38-ebaa-4bb5-a2f9-617a14094cc0.png)
 
 ***Sreenshot 6**: Supervised Machine Learning Accuracy Results (using Label Encoder)*
 
