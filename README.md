@@ -54,7 +54,6 @@ Based on the original dataset, it was determined that the data needed to be clea
 
 ![image](https://user-images.githubusercontent.com/92705556/168163351-0453e240-97c7-4811-8c7a-4332da024fbd.png)
 
-
 ## Data Analysis & Machine Learning
 ### General Data Analysis and Refinement                                     
 The initial data analysis included creating basic plots using matplotlib and linear regression, creating new dataframes using the 'groupby' function in both Python and SQL, and using R to run simple statistical analyses (Multiple Linear Regression and Chi-Squared Analysis).  
@@ -84,6 +83,8 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 ***Sreenshot 6**: Supervised Machine Learning Accuracy Results (using Label Encoder)*
 
 ![image](https://user-images.githubusercontent.com/92705556/168187077-49326184-59f4-4a25-a4ed-b9abe56baf0e.png)
+
+**Using Neural Networking with OneHot Encoder results in the highest accuracy percentage which will give our model the best chance of quickly predicting a fire size. This will not only be helpful but also not require large amounts of time and technology to run, thus providing an entertaining and informative tool for wildfire education.**
 
 ## Database
 To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our database, we have four main tables that are all connected through a common field: 'fire_id'. The original four tables were: fire_category, fire_info, fire_location, and weather_data. Using SQLAlchemy and Python, we then queried and joined information from the four original tables to create new tables.
