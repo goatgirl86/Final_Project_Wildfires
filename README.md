@@ -14,12 +14,12 @@ An Analysis of U.S. Wildfires from 1992-2015
 **Why Study Wildfires?**  *Wildfires affect us all!*
 - Wildfires have the potential to harm property, livelihoods, and human health. 
 - Climate change has already led to an increase in wildfire season length, wildfire frequency, and burned area.  It is bound to lead to further 
-- Colorado Wildfire Stats *(from Colorado Division of Fire Prevention and Control: https://dfpc.colorado.gov/wildfire-information-center/historical-wildfire-information)*
+- Colorado Wildfire Stats *(from Colorado Division of Fire Prevention and Control: https://dfpc.colorado.gov/wildfire-information-center/historical-wildfire-information*
     - 4 of the 5 largest CO wildfires have occured since 2018
     - The top 20 largest CO wildfires have occured in the last 20 years
 
 ### Source Data 
-**U.S. Wildfire data (plus other attributes)**: *https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes*) 
+- **U.S. Wildfire data (plus other attributes)**: *https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes* 
 
 ### Questions to Investigate
 -   Has the number, size, and cause of wildfires changed over time?
