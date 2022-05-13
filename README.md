@@ -35,6 +35,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 
 ### Communication Plan
 - **Communication Platforms utilized for group discussions**: GitHub, Google Drive, Instagram, Slack, Zoom
+
 Beginning on March 26, 2022, the group held weekly meetings via Zoom in addition to more frequent communication via the platforms listed above. Each group member actively participated in meetings, contributed to group discussions, sought to help other group members who were stuck or struggling, and played to their personal coding strengths to make the final product the best it could be.
 
 ## Data Exploration
