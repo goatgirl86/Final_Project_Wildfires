@@ -86,7 +86,7 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 
 ![image](https://user-images.githubusercontent.com/92705556/168187077-49326184-59f4-4a25-a4ed-b9abe56baf0e.png)
 
-**Neural Networking with OneHot Encoder results in the highest accuracy percentage, thus giving our model the best chance of quickly predicting a fire size and providing a simple, entertaining and informative tool for wildfire education.**
+**Neural Networking with OneHot Encoder results in the highest accuracy percentage, thus giving our model the best chance of quickly predicting fire size and providing a simple, entertaining and informative tool for wildfire education.**
 
 ## Database
 To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our database, we have four main tables that are all connected through a common field: 'fire_id'. The original four tables were: fire_category, fire_info, fire_location, and weather_data. Using SQLAlchemy and Python, we then queried and joined information from the four original tables to create new tables.
