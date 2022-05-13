@@ -101,7 +101,6 @@ To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our dat
 ## Dashboard
 To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows a user to run user inputs through our Machine Learning model to predict whether a medium-sized fire or larger will result in the next 7 days.  
 
-
 ## Conclusions
 Just as predicting the weather is notoroiously challenging even for the the professionals, predicting wildfires is also difficult due to varying weather conditions and unpredictable human behavior.  Once a fire sparks, the ability of it to be contained quickly depends not only on weather but also on response times, resource allocation and capacity, and much more.  
 
@@ -109,6 +108,7 @@ By predicting whether or not a fire will grow beyond a “Medium” size, first 
 - Asset relocation
 - Early containment
 - Set possible evacuation areas.
+- **Ideally, together, we can help to stop wildfire and prevent future loss of life and reduce property damage.** 
 
 ### As the climate change crisis now creates conditions that are only deteriorating and causing worse destruction, having the capability to determine fire size is essential.
 With this fire prediction tool we hope to provide new information that can help assist fire prevention teams with distribution of assets and even help them to request more resources from local and federal programs. Using the tableau map visualizations will also help determine areas that are highly affected and need attention on a growing basis. 
