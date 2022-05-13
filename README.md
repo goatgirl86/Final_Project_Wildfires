@@ -75,13 +75,19 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 *Example of KMeans Scaled Plot showing 3 classes of pre_30 weather data
 ![image](https://user-images.githubusercontent.com/92705556/168169630-bcd0b5c4-29e8-4421-bb32-7102cd8f4fc9.png)
 
--  **Supervised Machine Learning**: Neural Networking, Random Forest Classifier, Balanced Random Forest Classifier, Easy Ensemble Classifier, Naive Random Oversampling, SMOTE Oversampling, Cluster Centroids Undersampling, SMOTEENN Over and Undersampling, Gradient Boosting Classifier, and Logistic Regression models were all run to determine accuracy of prediction models.   
+-  **Supervised Machine Learning**: Neural Networking, Random Forest Classifier, Balanced Random Forest Classifier, Easy Ensemble Classifier, Naive Random Oversampling, SMOTE Oversampling, Cluster Centroids Undersampling, SMOTEENN Over and Undersampling, Gradient Boosting Classifier, and Logistic Regression models were all run to determine accuracy of prediction models. Models were run using both 'Label Encoder' and 'One Hot Encoder' for comparison.
+
+![image](https://user-images.githubusercontent.com/92705556/168186992-d12066cf-aabe-48bb-8a47-6bea3a5d1f07.png)
+
+![image](https://user-images.githubusercontent.com/92705556/168187077-49326184-59f4-4a25-a4ed-b9abe56baf0e.png)
 
 
 ## Database
 To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our database, we have four main tables that are all connected through a common field: 'fire_id'. The original four tables were: fire_category, fire_info, fire_location, and weather_data. Using SQLAlchemy and Python, we then queried and joined information from the four original tables to create new tables.
 
 ![image](https://user-images.githubusercontent.com/92705556/167992926-9e43c1b5-547e-432f-90e7-badf56cf6f97.png)
+
+![image](https://user-images.githubusercontent.com/92705556/168187328-59b19e08-9a2e-4397-bdbd-a15376612bc4.png)
 
 
 ## Conclusions
