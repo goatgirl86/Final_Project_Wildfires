@@ -47,11 +47,11 @@ The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *ka
 Based on the original dataset, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. 'Putout_time'required reclassification of the data type from string to date, and 'fire_cause' was binned to reduce number of unique values. 
 - *Cleaned Data: 13,138 rows and 18 columns* 
 
-*Screenshot 1: Dataframe showing rows needing to be cleaned/removed (putout_time is a string, '-1.000' values in weather columns, multiple '0' values)*
+***Screenshot 1**: Dataframe showing rows needing to be cleaned/removed (putout_time is a string, '-1.000' values in weather columns, multiple '0' values)*
 
 ![image](https://user-images.githubusercontent.com/92705556/166401401-c87669e4-9566-478c-9c48-6acccc5d442f.png)
 
-*Screenshot 2: Final Cleaned DF (temps_to_7.csv) - *Columns kept: 'fire_id', 'fire_size', 'fire_cause', 'latitude', 'longitude', 'state', 'discovery_month', 'Temp_pre_30', 'Temp_pre_15', 'Temp_pre_7', 'Wind_pre_30', 'Wind_pre_15', 'Wind_pre_7', 'Hum_pre_30', 'Hum_pre_15', 'Hum_pre_7', 'year', 'putout_time'.* 
+***Screenshot 2**: Final Cleaned DF (temps_to_7.csv) - *Columns kept: 'fire_id', 'fire_size', 'fire_cause', 'latitude', 'longitude', 'state', 'discovery_month', 'Temp_pre_30', 'Temp_pre_15', 'Temp_pre_7', 'Wind_pre_30', 'Wind_pre_15', 'Wind_pre_7', 'Hum_pre_30', 'Hum_pre_15', 'Hum_pre_7', 'year', 'putout_time'.* 
 
 ![image](https://user-images.githubusercontent.com/92705556/168163351-0453e240-97c7-4811-8c7a-4332da024fbd.png)
 
@@ -63,7 +63,7 @@ The initial data analysis included creating basic plots using matplotlib, creati
 After some of the initial analysis, we also decided to add five news coloumns in the dataset to provide additional information needed for further analysis and machine learning models. *Columns added **df_all_k.csv**: 'state_no', 'discovery_month_no', 'fire_size_bin', 'fire_size_bin_no', 'medium_plus'.
 - The 'fire_size_bin' column (and the associated 'fire_size_bin_no' and 'medium_plus' columns) are the main additions to the dataset.  The 'fire_size' columns included over 3000 unique values, so we decided to bin the fire sizes into groups based on acreage (Bin Name / Bin No): 0-5 acres (Teacup / 1), 5-10 acres (Toy / 2), 10-50 acres (Mini / 3), 50-1000 acres (Medium / 4), 1,000-10,000 acres (Large / 5), >10,000 acres (XL / 6).
 
-*Screenshot 3: Code showing creation of fire_size_bins and fire_size_bin_no*
+***Screenshot 3**: Code showing creation of fire_size_bins and fire_size_bin_no*
 
 ![image](https://user-images.githubusercontent.com/92705556/168167177-b2b067d0-7d96-4954-ae74-97e3f3d2c3dd.png)
 
@@ -72,17 +72,17 @@ After some of the initial analysis, we also decided to add five news coloumns in
 Using our knowledge of Supervised and Unsupervised Machine Learning, we ran several different models on our dataset.  
 - **Unsupervised Machine Learning**: KMeans, Primary Component Analysis (PCA), and Heirarchical Clustering were all used to identify 'groupings' of datapoints based on temperature, humidity, and wind variables.
 
-*Sreenshot 4: Unsupervised Machine Learning KMeans Scaled Model Plot showing 3 classes of pre_30 weather data*
+***Sreenshot 4**: Unsupervised Machine Learning KMeans Scaled Model Plot showing 3 classes of pre_30 weather data*
 
 ![image](https://user-images.githubusercontent.com/92705556/168169630-bcd0b5c4-29e8-4421-bb32-7102cd8f4fc9.png)
 
 -  **Supervised Machine Learning**: Neural Networking, Random Forest Classifier, Balanced Random Forest Classifier, Easy Ensemble Classifier, Naive Random Oversampling, SMOTE Oversampling, Cluster Centroids Undersampling, SMOTEENN Over and Undersampling, Gradient Boosting Classifier, and Logistic Regression models were all run to determine accuracy of prediction models. Models were run using both 'Label Encoder' and 'One Hot Encoder' for comparison.
 
-*Sreenshot 5: Supervised Machine Learning Accuracy Results (using OneHot Encoder)*
+***Sreenshot 5**: Supervised Machine Learning Accuracy Results (using OneHot Encoder)*
 
 ![image](https://user-images.githubusercontent.com/92705556/168186992-d12066cf-aabe-48bb-8a47-6bea3a5d1f07.png)
 
-*Sreenshot 6: Supervised Machine Learning Accuracy Results (using Label Encoder)*
+***Sreenshot 6**: Supervised Machine Learning Accuracy Results (using Label Encoder)*
 
 ![image](https://user-images.githubusercontent.com/92705556/168187077-49326184-59f4-4a25-a4ed-b9abe56baf0e.png)
 
@@ -91,12 +91,12 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our database, we have four main tables that are all connected through a common field: 'fire_id'. The original four tables were: fire_category, fire_info, fire_location, and weather_data. Using SQLAlchemy and Python, we then queried and joined information from the four original tables to create new tables.
 
 
-*Sreenshot 7: Entity Relationship Diagram (ERD) for our database*
+***Sreenshot 7**: Entity Relationship Diagram (ERD) for our database*
 
 ![image](https://user-images.githubusercontent.com/92705556/167992926-9e43c1b5-547e-432f-90e7-badf56cf6f97.png)
 
 
-*Sreenshot 8: Code showing SQL Alchemy connection with database and query / join of data from original tables into new dataframe*
+***Sreenshot 8**: Code showing SQL Alchemy connection with database and query / join of data from original tables into new dataframe*
 
 ![image](https://user-images.githubusercontent.com/92705556/168187328-59b19e08-9a2e-4397-bdbd-a15376612bc4.png)
 
