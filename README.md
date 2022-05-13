@@ -6,9 +6,8 @@ An Analysis of U.S. Wildfires from 1992-2015
 ![image](https://user-images.githubusercontent.com/92705556/164362996-733acdf8-498c-4ec8-83fc-886dc000c433.png)
 
 ## Project Visualizations
-- Tableau: coming soon
-- Web App: coming soon
-- Google Slides Presentation: *https://docs.google.com/presentation/d/1k6_nFs06r_e-iALVW8RSOxMYcdh0ALGk/edit?usp=sharing&ouid=108250606024172523210&rtpof=true&sd=true*
+- **Web App**: coming soon
+- **Google Slides Presentation**: *https://docs.google.com/presentation/d/1k6_nFs06r_e-iALVW8RSOxMYcdh0ALGk/edit?usp=sharing&ouid=108250606024172523210&rtpof=true&sd=true*
 
 ## Project Overview
 ### Purpose
@@ -21,7 +20,7 @@ An Analysis of U.S. Wildfires from 1992-2015
     - The top 20 largest CO wildfires have occured in the last 20 years
 
 ### Source Data 
-- **U.S. Wildfire data (plus other attributes)** (*https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes*) 
+**U.S. Wildfire data (plus other attributes)**: *https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes*) 
 
 ### Questions to Investigate
 -   Has the number, size, and cause of wildfires changed over time?
