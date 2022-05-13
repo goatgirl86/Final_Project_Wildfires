@@ -14,7 +14,6 @@ An Analysis of U.S. Wildfires from 1992-2015
 **Why Study Wildfires?**  *Wildfires affect us all!*
 - Wildfires have the potential to harm property, livelihoods, and human health. 
 - Climate change has already led to an increase in wildfire season length, wildfire frequency, and burned area.  It is bound to lead to further 
-
 - Colorado Wildfire Stats *(from Colorado Division of Fire Prevention and Control: https://dfpc.colorado.gov/wildfire-information-center/historical-wildfire-information)*
     - 4 of the 5 largest CO wildfires have occured since 2018
     - The top 20 largest CO wildfires have occured in the last 20 years
@@ -45,7 +44,8 @@ The "U.S. Wildfire data (plus other attributes)" dataset was downloaded from *ka
   
 ### Data Preprocessing
 
-Based on the original dataset, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. 'Putout_time'required reclassification of the data type from string to date, and 'fire_cause' was binned to reduce number of unique values. In the end, the data was reduced to 13,138 rows and 18 columns.  
+Based on the original dataset, it was determined that the data needed to be cleaned of columns and rows dominated by large numbers of empty cells and zeros. 'Putout_time'required reclassification of the data type from string to date, and 'fire_cause' was binned to reduce number of unique values. 
+- *Cleaned Data: 13,138 rows and 18 columns* 
 
 *Screenshot 1: Dataframe showing rows needing to be cleaned/removed (putout_time is a string, '-1.000' values in weather columns, multiple '0' values)*
 
