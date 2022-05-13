@@ -103,15 +103,15 @@ To make the dashboard, we used our knowledge of HTML and Javascript to create a 
 ## Conclusions
 Just as predicting the weather is notoriously challenging even for the professionals, predicting wildfires is also difficult due to varying weather conditions and unpredictable human behavior.  Once a fire sparks, the ability of it to be contained quickly depends not only on weather but also on response times, resource allocation and capacity, and much more.  
 
-With this fire prediction tool we hope to provide new information that can help assist fire prevention teams with distribution of assets and even help them to request more resources from local and federal programs. Tableau map visualizations may also help highlight highly affected areas that need attention on a growing basis. 
-
-Additionally, by predicting whether or not a fire will grow beyond a “Medium” size, first responders may address
+With this fire prediction tool, first responders may address
 - Asset relocation
 - Early containment
-- Set possible evacuation areas.
-- **Ideally, together, we can help prevent future loss of life and reduce property damage.** 
+- Possible evacuation areas
+- **Prevent future loss of life and minimize property damage** 
 
-### As the climate change crisis now creates conditions that are deteriorating and causing worse destruction, having the capability to determine fire size is essential.
+Additionally, we hope our model results can help fire prevention teams request additional resource and funding support from local, state, federal sources. Tableau map visualizations could also highlight highly affected areas that need attention. 
+
+### As the climate change crisis now creates conditions that are deteriorating and causing worse destruction, having the capability to determine potential fire size is essential.
 
 **Climate change affects us all and needs to be a topic of discussion at all levels of government and public forum.** Tools like this one that are easy to understand and bring pertinent issues to the forefront are needed to bring us all in the fight for a more stable future.
 
