@@ -76,6 +76,10 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 
 -  **Supervised Machine Learning**: Neural Networking, Random Forest Classifier, Balanced Random Forest Classifier, Easy Ensemble Classifier, Naive Random Oversampling, SMOTE Oversampling, Cluster Centroids Undersampling, SMOTEENN Over and Undersampling, Gradient Boosting Classifier, and Logistic Regression models were all run to determine accuracy of prediction models. Models were run using both 'Label Encoder' and 'One Hot Encoder' for comparison.
 
+*Note*: For Supervised Machine Learning Models, we used the following columns for our analyses.
+- Target (y) value: 'medium_plus'
+- X values: 'state', 'discovery_month', 'Temp_pre_7', 'Hum_pre_7', 'Wind_pre_7'
+
 ***Sreenshot 5**: Supervised Machine Learning Accuracy Results (using OneHot Encoder)*
 
 ![image](https://user-images.githubusercontent.com/92705556/168201343-9b222c38-ebaa-4bb5-a2f9-617a14094cc0.png)
