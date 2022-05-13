@@ -19,7 +19,7 @@ An Analysis of U.S. Wildfires from 1992-2015
     - The top 20 largest CO wildfires have occured in the last 20 years
 
 ### Source Data 
-**U.S. Wildfire data (plus other attributes)**: *https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes*) 
+- **U.S. Wildfire data (plus other attributes)**: *https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes*) 
 
 ### Questions to Investigate
 -   Has the number, size, and cause of wildfires changed over time?
