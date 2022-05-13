@@ -103,14 +103,15 @@ To make the dashboard, we used our knowledge of HTML and Javascript to create a 
 ## Conclusions
 Just as predicting the weather is notoriously challenging even for the professionals, predicting wildfires is also difficult due to varying weather conditions and unpredictable human behavior.  Once a fire sparks, the ability of it to be contained quickly depends not only on weather but also on response times, resource allocation and capacity, and much more.  
 
-By predicting whether or not a fire will grow beyond a “Medium” size, first responders may address
+With this fire prediction tool we hope to provide new information that can help assist fire prevention teams with distribution of assets and even help them to request more resources from local and federal programs. Tableau map visualizations may also help highlight highly affected areas that need attention on a growing basis. 
+
+Additionally, by predicting whether or not a fire will grow beyond a “Medium” size, first responders may address
 - Asset relocation
 - Early containment
 - Set possible evacuation areas.
-- **Ideally, together, we can help to stop wildfire and prevent future loss of life and reduce property damage.** 
+- **Ideally, together, we can help prevent future loss of life and reduce property damage.** 
 
-### As the climate change crisis now creates conditions that are only deteriorating and causing worse destruction, having the capability to determine fire size is essential.
-With this fire prediction tool we hope to provide new information that can help assist fire prevention teams with distribution of assets and even help them to request more resources from local and federal programs. Using the tableau map visualizations will also help determine areas that are highly affected and need attention on a growing basis. 
+### As the climate change crisis now creates conditions that are deteriorating and causing worse destruction, having the capability to determine fire size is essential.
 
 **Climate change affects us all and needs to be a topic of discussion at all levels of government and public forum.** Tools like this one that are easy to understand and bring pertinent issues to the forefront are needed to bring us all in the fight for a more stable future.
 
