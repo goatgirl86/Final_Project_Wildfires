@@ -86,7 +86,7 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 
 ![image](https://user-images.githubusercontent.com/92705556/168187077-49326184-59f4-4a25-a4ed-b9abe56baf0e.png)
 
-**Using Neural Networking with OneHot Encoder results in the highest accuracy percentage which will give our model the best chance of quickly predicting a fire size. This will not only be helpful but also not require large amounts of time and technology to run, thus providing an entertaining and informative tool for wildfire education.**
+**Neural Networking with OneHot Encoder results in the highest accuracy percentage, thus giving our model the best chance of quickly predicting a fire size and providing a simple, entertaining and informative tool for wildfire education.**
 
 ## Database
 To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our database, we have four main tables that are all connected through a common field: 'fire_id'. The original four tables were: fire_category, fire_info, fire_location, and weather_data. Using SQLAlchemy and Python, we then queried and joined information from the four original tables to create new tables.
@@ -105,7 +105,7 @@ To make the dashboard, we used our knowledge of HTML and Javascript to create a 
 ## Conclusions
 Just as predicting the weather is notoriously challenging even for the professionals, predicting wildfires is also difficult due to varying weather conditions and unpredictable human behavior.  Once a fire sparks, the ability of it to be contained quickly depends not only on weather but also on response times, resource allocation and capacity, and much more.  
 
-With this fire prediction tool, first responders may address
+With our fire prediction and visualization tool, first responders may address
 - Asset relocation
 - Early containment
 - Possible evacuation areas
