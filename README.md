@@ -110,7 +110,7 @@ By predicting whether or not a fire will grow beyond a “Medium” size, first 
 - Early containment
 - Set possible evacuation areas.
 
-### Determining fire size is essential as the climate change crisis now creates conditions that are only deteriorating and causing worse destruction.
+### As the climate change crisis now creates conditions that are only deteriorating and causing worse destruction, having the capability to determine fire size is critical.** 
 With this fire prediction tool we hope to provide new information that can help assist fire prevention teams with distribution of assets and even help them to request more resources from local and federal programs. Using the tableau map visualizations will also help determine areas that are highly affected and need attention on a growing basis. 
 
 **Climate change affects us all and needs to be a topic of discussion at all levels of government and public forum.** Tools like this one that are easy to understand and bring pertinent issues to the forefront arew needed to bring us all in the fight for a more stable future.
