@@ -71,7 +71,7 @@ After some of the initial analysis, we also decided to add five news coloumns in
 Using our knowledge of Supervised and Unsupervised Machine Learning, we ran several different models on our dataset.  
 - **Unsupervised Machine Learning**: KMeans, Primary Component Analysis (PCA), and Heirarchical Clustering were all used to identify 'groupings' of datapoints based on temperature, humidity, and wind variables.
 
-***Sreenshot 4**: Unsupervised Machine Learning KMeans Scaled Model Plot showing 3 classes of pre_30 weather data*
+***Sreenshot 4**: Unsupervised Machine Learning KMeans Scaled Model Plot showing 3 classes of pre_7 weather data (weather condition 7 days prior to fire start)*
 
 ![image](https://user-images.githubusercontent.com/92705556/168200740-36ab1e37-916e-4c2c-8d15-5e443d9967ed.png)
 
@@ -111,5 +111,5 @@ By predicting whether or not a fire will grow beyond a “Medium” size, first 
 ### As the climate change crisis now creates conditions that are only deteriorating and causing worse destruction, having the capability to determine fire size is essential.
 With this fire prediction tool we hope to provide new information that can help assist fire prevention teams with distribution of assets and even help them to request more resources from local and federal programs. Using the tableau map visualizations will also help determine areas that are highly affected and need attention on a growing basis. 
 
-**Climate change affects us all and needs to be a topic of discussion at all levels of government and public forum.** Tools like this one that are easy to understand and bring pertinent issues to the forefront arew needed to bring us all in the fight for a more stable future.
+**Climate change affects us all and needs to be a topic of discussion at all levels of government and public forum.** Tools like this one that are easy to understand and bring pertinent issues to the forefront are needed to bring us all in the fight for a more stable future.
 
