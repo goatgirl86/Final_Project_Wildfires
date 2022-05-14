@@ -28,6 +28,9 @@ An Analysis of U.S. Wildfires from 1992-2015
 -   Can temperature, wind, humidity, discovery month, and state be used to predict whether a fire will grow to at least 50 acres in size?
 
 ### Technologies, Languages, Tools, and Algorithms Used
+- **Requirements.txt**: Shows all packages and libraries used throughout project
+- **Libraries.txt**: Shows libraries imported by .ipynb file
+- 
 - **Data Storage**: GitHub
 - **Data Preprocessing**: Python, VSCode, PgAdmin
 - **Data Analysis**: Python, VSCode, RStudio
