@@ -63,7 +63,7 @@ The initial data analysis included creating basic plots using matplotlib and lin
 
 ![image](https://user-images.githubusercontent.com/92705556/168409947-b381d6ca-1cde-4133-a814-68fcc6ace20e.png)
 
-***Screenshot 4**: Linear Regression of Temperature vs Humidity (pre_7).*
+***Screenshot 4**: Linear Regression of Temperature (x) vs Humidity (y) (pre_7).*
 
 ![image](https://user-images.githubusercontent.com/92705556/168409963-92e00960-a406-4e54-a551-94e53bc2b0de.png)
 
