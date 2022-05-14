@@ -10,7 +10,7 @@ def index():
     return render_template("index1.html")
 
 
-@app.route("/predict", methods=["GET", 'POST'])
+@app.route("/predict", methods=["GET", "POST"])
 def predict():
     output = "Your value here!"
     #If you have the user submit a form
@@ -21,14 +21,12 @@ def predict():
         Temp_pre_7 : Temp_pre_7,
         Wind_pre_7 : Wind_pre_7,
         Hum_pre_7 : Hum_pre_7,
-"""
+        """
         
         
+        model = joblib.load('model_joblib.joblib')
         
-        
-        model = joblib.load('random_forest_4.joblib')
-        
-     
+
         state = request.json.get("state")
         discovery_month = request.json.get("discovery_month")
         Temp_pre_7 = request.json.get("Temp_pre_7")
@@ -37,7 +35,7 @@ def predict():
 
         
         columns = ["state",
-                   "discovery_month"
+                   "discovery_month",
                    "Temp_pre_7",
                    "Wind_pre_7",
                    "Hum_pre_7",
