@@ -16,7 +16,7 @@ hist(log_y, col='coral2', main='Log Transformed')
 
 
 
-table(table$year,table$discovery_month) #generate contingency table
+table(table$year,table$discovery_month)#generate contingency table
 
 tbl <- table(table$year,table$discovery_month) #generate contingency table
 chisq.test(tbl) #compare categorical distributions
