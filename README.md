@@ -109,9 +109,12 @@ To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our dat
 
 ![image](https://user-images.githubusercontent.com/92705556/167992926-9e43c1b5-547e-432f-90e7-badf56cf6f97.png)
 
-***Sreenshot 11**: Code showing SQL Alchemy connection with database and query / join of data from original tables into new dataframe*
+***Sreenshot 11 (group)**: Code and dataframes showing SQL Alchemy connection with database and query / join of data from original tables*
 
-![image](https://user-images.githubusercontent.com/92705556/168187328-59b19e08-9a2e-4397-bdbd-a15376612bc4.png)
+![image](https://user-images.githubusercontent.com/92705556/168447437-bc456946-d81d-4bce-acb1-2df477b3f777.png)
+![image](https://user-images.githubusercontent.com/92705556/168447419-bc98c370-7a6b-4cbb-9338-3af69c29ad72.png)
+![image](https://user-images.githubusercontent.com/92705556/168447429-7b3090c5-d16a-4712-901b-7c4596b34b5b.png)
+
 
 ## Dashboard
 To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows a user to run user inputs through our Machine Learning model to predict whether a medium-sized fire or larger will result in the next 7 days.  
