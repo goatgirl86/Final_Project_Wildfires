@@ -56,12 +56,25 @@ Based on the original dataset, it was determined that the data needed to be clea
 
 ## Data Analysis & Machine Learning
 ### General Data Analysis and Refinement                                     
-The initial data analysis included creating basic plots using matplotlib and linear regression, creating new dataframes using the 'groupby' function in both Python and SQL, and using R to run simple statistical analyses (Multiple Linear Regression and Chi-Square Test).  
+The initial data analysis included creating basic plots using matplotlib and linear regression, creating new dataframes using the 'groupby' function in both Python and SQL, and using R to run simple statistical analyses (Multiple Linear Regression and Chi-Square Test). 
+
+***Screenshot 3**: Scatter plot of fire size by year.*
+
+![image](https://user-images.githubusercontent.com/92705556/168409947-b381d6ca-1cde-4133-a814-68fcc6ace20e.png)
+
+***Screenshot 4**: Linear Regression of Humidity vs TRemperature (pre_7).*
+
+![image](https://user-images.githubusercontent.com/92705556/168409963-92e00960-a406-4e54-a551-94e53bc2b0de.png)
+
+***Screenshot 5**: Chi Square test of fire cause and year.*
+
+![image](https://user-images.githubusercontent.com/92705556/168409899-420a83f2-9613-4966-8d9a-998091409dfb.png)
+
 
 After some of the initial analysis, we also decided to add five news coloumns in the dataset to provide additional information needed for further analysis and machine learning models. *Columns added **df_all_k.csv**: 'state_no', 'discovery_month_no', 'fire_size_bin', 'fire_size_bin_no', 'medium_plus'.
 - The 'fire_size_bin' column (and the associated 'fire_size_bin_no' and 'medium_plus' columns) are the main additions to the dataset.  The 'fire_size' columns included over 3000 unique values, so we decided to bin the fire sizes into groups based on acreage (Bin Name / Bin No): 0-5 acres (Teacup / 1), 5-10 acres (Toy / 2), 10-50 acres (Mini / 3), 50-1000 acres (Medium / 4), 1,000-10,000 acres (Large / 5), >10,000 acres (XL / 6).  We also added an additional column for 'medium_plus'.  Fires that were at least medium in size were given a value of '1'. Teacup, Toy, Mini fires were given a value of '0'.  By adding this column, we could perform machine learning models that predicted whether a fire would grow to at least 50 acres in size.  
 
-***Screenshot 3**: Code showing creation of fire_size_bins and fire_size_bin_no*
+***Screenshot 6**: Code showing creation of fire_size_bins and fire_size_bin_no*
 
 ![image](https://user-images.githubusercontent.com/92705556/168167177-b2b067d0-7d96-4954-ae74-97e3f3d2c3dd.png)
 
@@ -70,7 +83,7 @@ After some of the initial analysis, we also decided to add five news coloumns in
 Using our knowledge of Supervised and Unsupervised Machine Learning, we ran several different models on our dataset.  
 - **Unsupervised Machine Learning**: KMeans, Primary Component Analysis (PCA), and Heirarchical Clustering were all used to identify 'groupings' of datapoints based on temperature, humidity, and wind variables.
 
-***Sreenshot 4**: Unsupervised Machine Learning KMeans Scaled Model Plot showing 3 classes of pre_7 weather data (weather condition 7 days prior to fire start)*
+***Sreenshot 7**: Unsupervised Machine Learning KMeans Scaled Model Plot showing 3 classes of pre_7 weather data (weather condition 7 days prior to fire start)*
 
 ![image](https://user-images.githubusercontent.com/92705556/168200740-36ab1e37-916e-4c2c-8d15-5e443d9967ed.png)
 
@@ -78,11 +91,11 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
     - Target (y) value: 'medium_plus'
     - X values: 'state', 'discovery_month', 'Temp_pre_7', 'Hum_pre_7', 'Wind_pre_7'
 
-***Sreenshot 5**: Supervised Machine Learning Accuracy Results (using OneHot Encoder)*
+***Sreenshot 8**: Supervised Machine Learning Accuracy Results (using OneHot Encoder)*
 
 ![image](https://user-images.githubusercontent.com/92705556/168201343-9b222c38-ebaa-4bb5-a2f9-617a14094cc0.png)
 
-***Sreenshot 6**: Supervised Machine Learning Accuracy Results (using Label Encoder)*
+***Sreenshot 9**: Supervised Machine Learning Accuracy Results (using Label Encoder)*
 
 ![image](https://user-images.githubusercontent.com/92705556/168187077-49326184-59f4-4a25-a4ed-b9abe56baf0e.png)
 
@@ -91,11 +104,11 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 ## Database
 To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our database, we have four main tables that are all connected through a common field: 'fire_id'. The original four tables were: fire_category, fire_info, fire_location, and weather_data. Using SQLAlchemy and Python, we then queried and joined information from the four original tables to create new tables.
 
-***Sreenshot 7**: Entity Relationship Diagram (ERD) for our database*
+***Sreenshot 10**: Entity Relationship Diagram (ERD) for our database*
 
 ![image](https://user-images.githubusercontent.com/92705556/167992926-9e43c1b5-547e-432f-90e7-badf56cf6f97.png)
 
-***Sreenshot 8**: Code showing SQL Alchemy connection with database and query / join of data from original tables into new dataframe*
+***Sreenshot 11**: Code showing SQL Alchemy connection with database and query / join of data from original tables into new dataframe*
 
 ![image](https://user-images.githubusercontent.com/92705556/168187328-59b19e08-9a2e-4397-bdbd-a15376612bc4.png)
 
