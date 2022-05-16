@@ -109,7 +109,7 @@ To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our dat
 
 ***Sreenshot 10**: Entity Relationship Diagram (ERD) for our database*
 
-![image](https://user-images.githubusercontent.com/92705556/167992926-9e43c1b5-547e-432f-90e7-badf56cf6f97.png)
+![image](https://user-images.githubusercontent.com/92705556/168500770-1f526ccc-263b-4ff0-9b58-13ea47908a7b.png)
 
 ***Sreenshot 11 (group)**: Code and dataframes showing SQL Alchemy connection with database and query / join of data from original tables*
 
