@@ -23,9 +23,9 @@ An Analysis of U.S. Wildfires from 1992-2015
 - **U.S. Wildfire data (plus other attributes)**: *https://www.kaggle.com/datasets/capcloudcoder/us-wildfire-data-plus-other-attributes* 
 
 ### Questions to Investigate
--   Has the number, size, and cause of wildfires changed over time? (general analysis and visualization)
--   Has the timing and distribution of wildfires changed over time? (general analysis and visualization)
--   Can temperature, wind, humidity, discovery month, and state be used to predict whether a fire will grow to at least 50 acres in size? (machine learning)
+-   Has the number, size, and cause of wildfires changed over time? *(general analysis and visualization)*
+-   Has the timing and distribution of wildfires changed over time? *(general analysis and visualization)*
+-   Can temperature, wind, humidity, discovery month, and state be used to predict whether a fire will grow to at least 50 acres in size? *(machine learning)*
 
 ### Technologies, Languages, Tools, and Algorithms Used
 - **Requirements.txt**: Shows all packages and libraries used throughout project
