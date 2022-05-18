@@ -84,7 +84,7 @@ After some of the initial analysis, we also decided to add five news coloumns in
 
 ### Machine Learning
 Using our knowledge of Supervised and Unsupervised Machine Learning, we ran several different models on our dataset.  
-- **Unsupervised Machine Learning**: KMeans, Primary Component Analysis (PCA), and Heirarchical Clustering were all used to identify 'groupings' of datapoints based on temperature, humidity, and wind variables.
+- **Unsupervised Machine Learning**: KMeans, Primary Component Analysis (PCA), and Heirarchical Clustering were all used to identify 'groupings' of datapoints based on temperature, humidity, and wind variables. *Note: Unsupervised Machine Learning was NOT used for the deployment of our machine learning model but rather used for visualization purposes.*  
 
 ***Sreenshot 7**: Unsupervised Machine Learning KMeans Scaled Model Plot showing 3 classes of pre_7 weather data (weather condition 7 days prior to fire start)*
 
