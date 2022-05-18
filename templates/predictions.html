@@ -160,30 +160,29 @@
             
             
 
-<!-- Celsius to Fahrenheit converter -->
-            <div class='container-fluid'>
-                <div class="row">
-                    <div class="col-md-8">
-                        <div style="float: right">
-                    <!-- <div style="position: absolute; right: 300px; top:500px;"> -->
-        <h2>Temperature Converter</h2>
-        <p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
-        
-        <p>
-          <label>Celsius</label>
-          <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
-        </p>
-        <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
-        
-        <script>
-        function temperatureConverter(valNum) {
-          valNum = parseFloat(valNum);
-          document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
-        }
-        </script>
+<!-- Fahrenheit to Celsius converter -->
+<div class='container-fluid'>
+    <div class="row">
+        <div class="col-md-8">
+            <div style="float: right">
+                <div style="position: absolute; right: -100px; top:-50px;">
+                    <h2>Temperature Converter</h2>
+                    <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+                    <p>
+                        <label>Fahrenheit</label>
+                        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
+                            oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+                    </p>
+                    <p>Celsius: <span id="outputCelsius"></span></p>
+                    <script>
+                        function temperatureConverter(valNum) {
+                            valNum = parseFloat(valNum);
+                            document.getElementById("outputCelsius").innerHTML = (valNum - 32) / 1.8;
+                        }
+                    </script>
+                </div>
+            </div>
         </div>
-        </div>
-    </div>
         
         
                         <!-- predition buttons and output-->
