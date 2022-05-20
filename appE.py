@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request
 import joblib
 import pandas as pd
-
+from data_transfer import custome_transfer_func
 app = Flask(__name__)
 
 
@@ -17,21 +17,25 @@ def predict():
     if request.method == 'POST':
         """
         state : state,
-        discovery_month : discovery_month
+        discovery_month : discovery_month,
         Temp_pre_7 : Temp_pre_7,
         Wind_pre_7 : Wind_pre_7,
         Hum_pre_7 : Hum_pre_7,
         """
         
+        #'{"state":"AK","discovery_month":"1","Temp_pre_7":"12","Wind_pre_7":"13","Hum_pre_7":"14"}'
+        model = joblib.load('model_joblib')
         
-        model = joblib.load('model_joblib.joblib')
         
-
-        state = request.json.get("state")
-        discovery_month = request.json.get("discovery_month")
-        Temp_pre_7 = request.json.get("Temp_pre_7")
-        Wind_pre_7 = request.json.get("Wind_pre_7")
-        Hum_pre_7 = request.json.get("Hum_pre_7")
+        data = request.get_json()
+        
+        state = data["state"]
+        
+        
+        discovery_month = data["discovery_month"]
+        Temp_pre_7 = data["Temp_pre_7"]
+        Wind_pre_7 = data["Wind_pre_7"]
+        Hum_pre_7 = data["Hum_pre_7"]
 
         
         columns = ["state",
@@ -41,17 +45,21 @@ def predict():
                    "Hum_pre_7",
                     
                    ]
+        
         # test_data = [[education, urban, gender, engant, age, hand_orientation, religion, orientation, race, voted, married, family_size]]
         test_data = pd.DataFrame([[state,
                                     discovery_month,
-                                    Temp_pre_7,
-                                    Wind_pre_7,
-                                    Hum_pre_7,
+                                    float(Temp_pre_7),
+                                    float(Wind_pre_7),
+                                    float(Hum_pre_7),
                                 ]], columns=columns)
-        pred = model.predict(test_data)
-
         print(test_data)
         print(pred)
+        print("*********")
+        # Transfer test_data to normalized data
+        normalized_data = custome_transfer_func(test_data)
+        pred = model.predict(normalized_data)
+        print("*********")
         # return render_template('predictions.html', output=output)
         return {"Prediction": pred[0]}
 
