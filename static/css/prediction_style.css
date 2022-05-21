@@ -1,4 +1,24 @@
-body {
+
+  .jumbotron {
+    background: url("/static/images/wildfire_4");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Verdana', sans-serif;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .jumbotron2 {
+    background-color: rgba(200, 54, 54, .5);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+  } 
+  
+
+
+/* body {
     background-color: black;
     color: black;
     font-family: Georgia, serif;
@@ -24,11 +44,11 @@ body {
     font-family: Georgia, serif;
     color: white;
   }
-  
+   */
   
 
 /* Jumbotron */
-#video-background {
+/* #video-background {
     position: absolute;
     top: 0;
     right: 0;
@@ -47,7 +67,7 @@ overflow: hidden;
 .jumbotron .container {
 position: relative;
 z-index: 1;
-}
+} */
 
 
 
@@ -100,7 +120,7 @@ z-index: 1;
 
 
 
-
+/* 
   .btn{
       background-color: rgba(0, 0, 250, 0.25);
       display: inline-block;
@@ -119,4 +139,4 @@ z-index: 1;
   
   a:hover { 
     color: rgba(200, 54, 54, .5); 
-  }
+  } */
