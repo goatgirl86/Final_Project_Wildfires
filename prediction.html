@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Machine Learning Model on Conspiracy Theories </title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&amp;lang=en" />
+    <link rel="stylesheet" href="/static/css/predictions_style.css">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+
+</head>
+
+<body>  
+    <!-- <div class='container-fluid'>
+        <div class="jumbotron specialjum"> 
+            <h3 class='display-1'>Wild Fires and Determining it's size. </h3>
+            <p class="lead text-center" >See what kind of fire it will be.</p>
+            <p class="text-center">Select and add the information needed "CLICK to Calculate"</p>
+            <br>
+        </div> -->
+
+    <!-- jumbotron -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"/>
+<section class="jumbotron text-center">
+  <video id="video-background" preload muted autoplay loop>
+    <source width="100%" src="C:\Users\danie\Classwork\Wildfires\static\images\fire_background_loop2_videvo2.mp4" type="video/mp4" frameborder="0">
+    <!-- <iframe width="100%" src="static\images\fire_background_loop2_videvo2.mp4" frameborder="0"></iframe>   -->
+    </video>
+  <div class="container">
+    <h1 class="jumbotron-heading">Wild Fires and Determining it's size</h1>
+    <p class="lead text-muted">See what kind of fire it will be </p>
+    <p class="text-center">Select and add the information needed "CLICK to Calculate"</p>
+  </div>
+</video>
+</section>
+
+
+            <!-- start of selection & prediction form -->
+            <div class='container-fluid'>
+                <div class="row">
+
+                        <!--list for States-->
+                        <div class="col-md-3">
+                            <div class="input" id="state">
+                                <br>
+                                <label for="state">Your State</label>
+                                <br>
+                                <select id="state" name="state">
+                                    <option selected value="">Please Make A Selection:</option>
+                                    <option value="AK">AK</option>
+                                    <option value="AL">AL</option>
+                                    <option value="AR">AR</option>
+                                    <option value="AZ">AZ</option>
+                                    <option value="CA">CA</option>
+                                    <option value="CO">CO</option>
+                                    <option value="FL">FL</option>
+                                    <option value="GA">GA</option>
+                                    <option value="IA">IA</option>
+                                    <option value="ID">ID</option>
+                                    <option value="IL">IL</option>
+                                    <option value="IN">IN</option>
+                                    <option value="KS">KS</option>
+                                    <option value="KY">KY</option>
+                                    <option value="LA">LA</option>
+                                    <option value="MA">MA</option>
+                                    <option value="MD">MD</option>
+                                    <option value="ME">ME</option>
+                                    <option value="MI">MI</option>
+                                    <option value="MN">MN</option>
+                                    <option value="MO">MO</option>
+                                    <option value="MS">MS</option>
+                                    <option value="MT">MT</option>
+                                    <option value="NC">NC</option>
+                                    <option value="ND">ND</option>
+                                    <option value="NE">NE</option>
+                                    <option value="NJ">NJ</option>
+                                    <option value="NM">NM</option>
+                                    <option value="NV">NV</option>
+                                    <option value="NY">NY</option>
+                                    <option value="OH">OH</option>
+                                    <option value="OK">OK</option>
+                                    <option value="OR">OR</option>
+                                    <option value="PA">PA</option>
+                                    <option value="PR">PR</option>
+                                    <option value="SC">SC</option>
+                                    <option value="SD">SD</option>
+                                    <option value="TN">TN</option>
+                                    <option value="TX">TX</option>
+                                    <option value="UT">UT</option>
+                                    <option value="VA">VA</option>
+                                    <option value="WA">WA</option>
+                                    <option value="WI">WI</option>
+                                    <option value="WV">WV</option>
+                                    <option value="WY">WY</option>
+                                
+                                    </select>
+                            </div>
+                        </div>
+                        <br><br>
+                        
+                        <!--list for Months-->
+                        <div class="col-md-3">
+                            <div class="form-input" id="religion_input">
+                                <br>
+                                <label for="discovery_month">The discovery month:</label>
+                                <br>
+                                <select name="discovery_month" id="discovery_month">
+                                    <option selected value="1">Please Make A Selection:</option>
+                                    <option value="1">Jan</option>
+                                    <option value="2">Feb</option>
+                                    <option value="3">Mar</option>
+                                    <option value="4">Apr</option>
+                                    <option value="5">May</option>
+                                    <option value="6">Jun</option>
+                                    <option value="7">Jul</option>
+                                    <option value="8">Aug</option>
+                                    <option value="9">Sep</option>
+                                    <option value="10">Oct</option>
+                                    <option value="11">Nov</option>
+                                    <option value="12">Dec</option>
+                                </select> 
+                            </div>
+                        </div>
+                        <br><br>
+
+                        <!--list for Temp-->
+                        <div class="col-md-3">
+                            <div class="form-input" id="Temp_pre_7">
+                                <br>
+                                <label for="Temp_pre_7"> Current Temperature (Celsius):</label>
+                                <br>
+                                
+                                <input type="number" step="any" name="Temp_pre_7">
+                                    
+
+                                
+                            </div>  
+                        </div>
+                        <br><br>
+
+                        <!--list for Wind-->
+                        <div class="col-md-3">
+                            <div class="form-input" id="Wind_pre_7">
+                                <br>
+                                <label for="Wind_pre_7">Current Wind speed:</label>
+                                <br>
+                                <input type="number" step="any" name="Wind_pre_7">
+                            </div>  
+                        </div>
+                        <br><br>
+
+                        <!--list for Hum-->
+                        <div class="col-md-3">
+                            <div class="form-input" id="Hum_pre_7">
+                                <br>
+                                <label for="Hum_pre_7">Humidity:</label>
+                                <br>
+                                <input type="number" step="any" name="Hum_pre_7">
+                            </div>  
+                        </div>
+                        <br><br>
+
+
+<!-- Celsius to Fahrenheit converter -->
+<!-- <div style="color:white"> -->
+    <div style="position: absolute; right: 300px; top:500px;">
+    <div class="col-md-12">
+    <h2>Temperature Converter</h2>
+    <p>Type a value in the Celsius field to convert the value to Fahrenheit:</p>
+    
+    <p>
+      <label>Celsius</label>
+      <input id="inputCelsius" type="number" placeholder="Celsius" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+    </p>
+    <p>Fahrenheit: <span id="outputFahrenheit"></span></p>
+    
+    <script>
+    function temperatureConverter(valNum) {
+      valNum = parseFloat(valNum);
+      document.getElementById("outputFahrenheit").innerHTML=(valNum*1.8)+32;
+    }
+    </script>
+    </div>
+    </div>
+
+                    
+
+                        <!-- predition buttons and output-->
+                        <br></br>
+                        <br></br>
+
+                        <div class="col-md-12">
+                            <button onclick="make_pred()" class='btn btn-info'>CLICK to Calculate</button>
+                            <button onClick="window.location.reload();" class='btn btn-info'>Refresh Selections</button>
+                            <button onclick="history.back()" class='btn btn-info'>Go Back to Home Page</button>
+                            <div class="col-md-12">
+                                <h1 id="prediction"></h1>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+            <br><br>
+        
+
+            <!--result descriptions-->
+            <!-- <div class="jumbotron2">
+                <div class='col-md-12'>
+                    <br>
+                    <h1>Description of Results:</h1>
+                        <li>Government Malfeasance: You might believe in the malicious intent of the government.</li>
+                        <br>
+                        <li>Malevolent Global Conspiracies: You might believe that the world as we observe it is a hoax.</li>
+                        <br>
+                        <li>Extraterrestrial Cover Up: You might believe that aliens have already been to earth. The truth is out there!</li>
+                        <br>
+                        <li>Control of Information: You might believe that the media is biased and untruthful.</li>
+                        <br>
+                        <li>Personal Well-being: You might believe that organizations are actively seeking to control your mind and spread diseases.</li>
+                        <br>
+                        <li>You got a combination of the above: You believe in more than one. Congrats?? </li>
+                        <br>
+                        <li>Not a Conspiracy Theorist: You are a skeptic to conspiracies. At least for now... </li>
+                        <br>
+                </div>
+            </div>
+            <br><br>
+
+
+        <h3 id="learn">Would you like to learn more about the (GCB) Generic Conspiracisy Beliefs Scale?</h3>
+        <h2><a href="https://www.frontiersin.org/articles/10.3389/fpsyg.2013.00279/full" target="_blank">*Visit the Original Research Article to Learn More*</a></h2> -->
+
+
+        <!-- Link to JS file, d3, and plotly-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        <script src="static/js/appE.js"></script>
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </div>
+</body>
+
+</html>
+
+
+<!-- text with video for jumbotron -->
+<!-- <style>
+.container{
+  height: 400px;
+  width: 100vw;
+  position: relative;
+}
+.container iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.container h1{
+  mix-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 10rem;
+  background-color: #000;
+  color: #fff;
+}
+</style>
+<div class="container">
+    <iframe width="100%" src="static\images\fire_background_loop2_videvo2.mp4" frameborder="0"></iframe>
+    <h1 class="title">Wildfires of the U.S 1992-2015</h1>
+</div>   -->
