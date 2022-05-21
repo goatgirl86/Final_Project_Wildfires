@@ -31,17 +31,17 @@ function make_pred() {
 
 
         }),
-    }).then(resp=>{
-        return resp.json()
-    }).then(resp=>{
-        console.log(resp)
-        document.getElementById("prediction").innerHTML=resp.Prediction
-        console.log(resp.Prediction);
-        if (resp.Prediction=="0"){
-            document.getElementById("dummy").src= "/static/images/wildfire_2.jpg" 
+    })
+    .then(res => res.json())
+    .then(data=>{
+        console.log(data)
+        document.getElementById("prediction").innerHTML=data.Prediction
+        
+        if (data.Prediction=="0"){
+            document.getElementById("dummy").src="/static/images/little_fire.jpg" 
         }
-        else if (resp.Prediction=="1"){
-            document.getElementById("dummy").src="/static/images/COwildfire2.jpg"
+        else if (data.Prediction=="1"){
+            document.getElementById("dummy").src="/static/images/big_fire.jpg"
         }
 
     })

@@ -1,4 +1,4 @@
-from flask import Flask, render_template, request
+from flask import Flask, jsonify, render_template, request
 import joblib
 import pandas as pd
 import numpy as np
@@ -64,8 +64,9 @@ def predict():
         normalized_data = custome_transfer_func(test_data)
         pred = model.predict(normalized_data)
         print("*********")
+        print(pred)
         # return render_template('predictions.html', output=output)
-        return {"Prediction": pred[0]}
+        return jsonify({"Prediction": int(pred[0])})
 
     return render_template('predictions.html', output=output)
 
