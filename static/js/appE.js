@@ -32,17 +32,16 @@ function make_pred() {
 
         }),
     }).then(resp=>{
-        console.log(resp)
         return resp.json()
     }).then(resp=>{
         console.log(resp)
         document.getElementById("prediction").innerHTML=resp.Prediction
         console.log(resp.Prediction);
         if (resp.Prediction=="0"){
-            document.getElementById("dummy").src= "/static/images/scully.gif" 
+            document.getElementById("dummy").src= "/static/images/wildfire_2.jpg" 
         }
         else if (resp.Prediction=="1"){
-            document.getElementById("dummy").src="/static/images/washington.gif"
+            document.getElementById("dummy").src="/static/images/COwildfire2.jpg"
         }
 
     })
