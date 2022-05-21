@@ -13,10 +13,15 @@ function make_pred() {
     console.log("Temp_pre_7",Temp_pre_7)
     console.log("Wind_pre_7",Wind_pre_7)
     console.log("Hum_pre_7",Hum_pre_7)
-
+    
     
     fetch("/predict", {
         method: "POST", 
+        headers:{
+            "Content-type":"application/json" 
+            // charset=UTF-8
+    
+        }, 
         body: JSON.stringify({
             state: state,
             discovery_month: discovery_month,
@@ -26,11 +31,8 @@ function make_pred() {
 
 
         }),
-        headers:{
-            "Content-type":"application/json;charset=UTF-8"
-
-        } 
     }).then(resp=>{
+        console.log(resp)
         return resp.json()
     }).then(resp=>{
         console.log(resp)
