@@ -84,6 +84,7 @@ After some of the initial analysis, we also decided to add five news coloumns in
 ***Screenshot 7**: Correlation Matrix*
 
 This correlation matrix was made using Python's Seaborn library for data visualization.  Correlations measure the positive or negative relationship between two variables.
+
 ![image](https://user-images.githubusercontent.com/92705556/169682518-403d997e-430f-4144-ae59-786405c9c01f.png)
 
 
