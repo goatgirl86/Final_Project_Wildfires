@@ -38,10 +38,10 @@ function make_pred() {
         document.getElementById("prediction").innerHTML=data.Prediction
         
         if (data.Prediction=="0"){
-            document.getElementById("dummy").src="/static/images/little_fire.jpg" 
+            document.getElementById("dummy").src="/static/images/little_fire_2.jpg" 
         }
         else if (data.Prediction=="1"){
-            document.getElementById("dummy").src="/static/images/big_fire.jpg"
+            document.getElementById("dummy").src="/static/images/big_fire_2.jpg"
         }
 
     })
