@@ -125,15 +125,15 @@ To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our dat
 
 
 ## Dashboard
-To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows a user to run user inputs through our Machine Learning model to predict whether a fire 50 acres or larger will result in the next 7 days.  
+To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows page visitors to run user inputs through our Machine Learning model to predict whether a fire 50 acres or larger will result in the next 7 days.  
 
-***Sreenshot 13**: Page 1 of Tableau story showing map of U.S. wildfires from 1992-2015 with interactive filters*
-
-![image](https://user-images.githubusercontent.com/92705556/168952535-4e2c2eeb-0401-477b-97f1-96d1c938d7a3.png)
-
-***Sreenshot 14**: Page 1 of our web app*
+***Sreenshot 13**: Page 1 of our web app*
 
 ![image](https://user-images.githubusercontent.com/92705556/169681887-04e5e3e2-f752-4ee1-aac1-89b45577d855.png)
+
+***Sreenshot 14**: Page 1 of Tableau story on Pahe 1 of web app*
+
+![image](https://user-images.githubusercontent.com/92705556/168952535-4e2c2eeb-0401-477b-97f1-96d1c938d7a3.png)
 
 ***Sreenshot 15 (group)**: Page 2 of our web app*
 
