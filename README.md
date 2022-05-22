@@ -81,12 +81,18 @@ After some of the initial analysis, we also decided to add five news coloumns in
 
 ![image](https://user-images.githubusercontent.com/92705556/168167177-b2b067d0-7d96-4954-ae74-97e3f3d2c3dd.png)
 
+***Screenshot 7**: Correlation Matrix*
+
+This correlation matrix was made using Python's Seaborn library for data visualization.  Correlations measure the positive or negative relationship between two variables.
+
+![image](https://user-images.githubusercontent.com/92705556/169682518-403d997e-430f-4144-ae59-786405c9c01f.png)
+
 
 ### Machine Learning
 Using our knowledge of Supervised and Unsupervised Machine Learning, we ran several different models on our dataset.  
 - **Unsupervised Machine Learning**: KMeans, Primary Component Analysis (PCA), and Heirarchical Clustering were all used to identify 'groupings' of datapoints based on temperature, humidity, and wind variables. *Note: Unsupervised Machine Learning was NOT used for the deployment of our machine learning model but rather used for visualization purposes.*  
 
-***Sreenshot 7**: Unsupervised Machine Learning KMeans Scaled Model Plot showing 3 classes of pre_7 weather data (weather condition 7 days prior to fire start)*
+***Sreenshot 8**: Unsupervised Machine Learning KMeans Scaled Model Plot showing 3 classes of pre_7 weather data (weather condition 7 days prior to fire start)*
 
 ![image](https://user-images.githubusercontent.com/92705556/168200740-36ab1e37-916e-4c2c-8d15-5e443d9967ed.png)
 
@@ -94,24 +100,24 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
     - Target (y) value: 'medium_plus'
     - X values: 'state', 'discovery_month', 'Temp_pre_7', 'Hum_pre_7', 'Wind_pre_7'
 
-***Sreenshot 8**: Supervised Machine Learning Accuracy Results (using OneHot Encoder)*
+***Sreenshot 9**: Supervised Machine Learning Accuracy Results (using OneHot Encoder)*
 
 ![image](https://user-images.githubusercontent.com/92705556/168201343-9b222c38-ebaa-4bb5-a2f9-617a14094cc0.png)
 
-***Sreenshot 9**: Supervised Machine Learning Accuracy Results (using Label Encoder)*
+***Sreenshot 10**: Supervised Machine Learning Accuracy Results (using Label Encoder)*
 
 ![image](https://user-images.githubusercontent.com/92705556/168187077-49326184-59f4-4a25-a4ed-b9abe56baf0e.png)
 
-**NOTE: Neural Networking using OneHot Encoder resulted in the highest accuracy percentage at 78.87%. However, with accuracy score of 77.96%, Logistic Regression using OneHot Encoder came at a close second best. Because overfitting and underfitting is a common concern with deep neural networking, we elected to go with the simpler Logistic Regression model for deployment of our prediction tool.**
+**NOTE: In the end, we decided to go with Easy Ensemble Classifer using Label Encoder for our prediction tool. This model had a accuracy score and was easier to merge with our web app than some of the other models.**
 
 ## Database
 To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our database, we have four main tables that are all connected through a common field: 'fire_id'. The original four tables were: fire_category, fire_info, fire_location, and weather_data. Using SQLAlchemy and Python, we then queried and joined information from the four original tables to create new tables.
 
-***Sreenshot 10**: Entity Relationship Diagram (ERD) for our database*
+***Sreenshot 11**: Entity Relationship Diagram (ERD) for our database*
 
 ![image](https://user-images.githubusercontent.com/92705556/168500770-1f526ccc-263b-4ff0-9b58-13ea47908a7b.png)
 
-***Sreenshot 11 (group)**: Code and dataframes showing SQL Alchemy connection with database and query / join of data from original tables*
+***Sreenshot 12 (group)**: Code and dataframes showing SQL Alchemy connection with database and query / join of data from original tables*
 
 ![image](https://user-images.githubusercontent.com/92705556/168447437-bc456946-d81d-4bce-acb1-2df477b3f777.png)
 ![image](https://user-images.githubusercontent.com/92705556/168447419-bc98c370-7a6b-4cbb-9338-3af69c29ad72.png)
@@ -119,11 +125,20 @@ To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our dat
 
 
 ## Dashboard
-To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows a user to run user inputs through our Machine Learning model to predict whether a medium-sized fire or larger will result in the next 7 days.  
+To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows a user to run user inputs through our Machine Learning model to predict whether a fire 50 acres or larger will result in the next 7 days.  
 
-***Sreenshot 12**: Page 1 of Tableau story showing map of U.S. wildfires from 1992-2015 with interactive filters*
+***Sreenshot 13**: Page 1 of Tableau story showing map of U.S. wildfires from 1992-2015 with interactive filters*
 
 ![image](https://user-images.githubusercontent.com/92705556/168952535-4e2c2eeb-0401-477b-97f1-96d1c938d7a3.png)
+
+***Sreenshot 14**: Page 1 of our web app*
+
+![image](https://user-images.githubusercontent.com/92705556/169681887-04e5e3e2-f752-4ee1-aac1-89b45577d855.png)
+
+***Sreenshot 15 (group)**: Page 2 of our web app*
+
+![image](https://user-images.githubusercontent.com/92705556/169681945-f5d6fafe-dc48-4c11-9b2f-459135f506ce.png)
+![image](https://user-images.githubusercontent.com/92705556/169682344-d80e6460-760d-4286-851b-66c6a0735752.png)
 
 
 ## Conclusions
