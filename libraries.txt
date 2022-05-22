@@ -100,3 +100,13 @@ import psycopg2
 import config
 from config import db_password
 from sqlalchemy import create_engine
+
+---------------
+Correlation Matrix
+---
+Correlation.ipynb
+-
+import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sb
+import numpy as np
