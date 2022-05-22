@@ -130,12 +130,9 @@ To make the dashboard, we used our knowledge of HTML and Javascript to create a 
 ***Sreenshot 13**: Page 1 of our web app*
 
 ![image](https://user-images.githubusercontent.com/92705556/169681887-04e5e3e2-f752-4ee1-aac1-89b45577d855.png)
-
-***Sreenshot 14**: Page 1 of Tableau story on Pahe 1 of web app*
-
 ![image](https://user-images.githubusercontent.com/92705556/168952535-4e2c2eeb-0401-477b-97f1-96d1c938d7a3.png)
 
-***Sreenshot 15 (group)**: Page 2 of our web app*
+***Sreenshot 14 (group)**: Page 2 of our web app*
 
 ![image](https://user-images.githubusercontent.com/92705556/169681945-f5d6fafe-dc48-4c11-9b2f-459135f506ce.png)
 ![image](https://user-images.githubusercontent.com/92705556/169682344-d80e6460-760d-4286-851b-66c6a0735752.png)
