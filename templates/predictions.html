@@ -7,6 +7,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/prediction_style.css">
 
     <title>Wildfires Predictions</title>
 
@@ -19,15 +20,17 @@
   </head>
   <body>
 <div class="container-fluid bg-dark">
-<div class="container">
+<!-- <div class="container"> -->
+
 
     
     <!-- Jumbotron -->
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-          <h1 class="display-4">Wild Fires and Determining it's size</h1>
-          <p class="lead">See what kind of fire it will be</p>
-          <p class="lead">Select and add the information needed "CLICK to Calculate"</p>
+    <div class='container-fluid'>
+        <div class="jumbotron specialjum" style="color: #a0271f"> 
+            <h3 class='display-1'> Wildfires and determining its size </h3>
+            <h3>See what size of fire it will be</h3>
+            <p>Select your features then "CLICK to Calculate"</p>
+            <br>
         </div>
       </div>    
 
@@ -140,7 +143,7 @@
             <div class="col-md-3">
                 <div class="form-input" >
                     <br>
-                    <label for="Wind_pre_7">Current Wind speed:</label>
+                    <label for="Wind_pre_7">Current Wind speed (meter/second):</label>
                     <br>
                     <input type="number" step="any" name="Wind_pre_7" id="Wind_pre_7">
                 </div>  
@@ -151,7 +154,7 @@
             <div class="col-md-3">
                 <div class="form-input" >
                     <br>
-                    <label for="Hum_pre_7">Humidity:</label>
+                    <label for="Hum_pre_7">Humidity (%):</label>
                     <br>
                     <input type="number" step="any" name="Hum_pre_7" id="Hum_pre_7">
                 </div>  
@@ -160,31 +163,60 @@
             
             
 
-<!-- Fahrenheit to Celsius converter -->
-<div class='container-fluid'>
+<!-- Instructions to use converters -->
+<div class="container mt-5">
     <div class="row">
-        <div class="col-md-8">
-            <div style="float: right">
-                <div style="position: absolute; right: -100px; top:-50px;">
-                    <h2>Temperature Converter</h2>
-                    <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p>
+      <div class="col-sm-9">
+<h5>Please use converters to input the correct information for Current Temperature and Current Wind Speed</h5>
+
+
+
+<!-- Fahrenheit to Celsius converter -->
+            <div class="row">
+                <div class="col-8 col-sm-6">                
+<!-- <h4>Temperature Converter</h4> -->
+<!-- <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p> -->
+
+        <p>
+            <label>Fahrenheit</label>
+            <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+        </p>
+        <p>Celsius: <span id="outputCelsius"></span></p>
+
+        <script>
+        function temperatureConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputCelsius").innerHTML=(valNum-32)/1.8;
+
+        }
+        </script>
+                </div>
+        
+        
+
+<!-- converter for meters to miles -->
+                <div class="col-4 col-sm-6">
                     <p>
-                        <label>Fahrenheit</label>
-                        <input id="inputFahrenheit" type="number" placeholder="Fahrenheit"
-                            oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
-                    </p>
-                    <p>Celsius: <span id="outputCelsius"></span></p>
-                    <script>
-                        function temperatureConverter(valNum) {
-                            valNum = parseFloat(valNum);
-                            document.getElementById("outputCelsius").innerHTML = (valNum - 32) / 1.8;
-                        }
-                    </script>
+                        <label>meter/second</label>
+                        <input id="inputmeter" type="number" placeholder="meter/second" oninput="meterConverter(this.value)" onchange="meterConverter(this.value)">
+                      </p>
+                      <p>mile/hour: <span id="outputmile"></span></p>
+                      
+                      <script>
+                      function meterConverter(valNum) {
+                        valNum = parseFloat(valNum);
+                        document.getElementById("outputmile").innerHTML=(valNum)*0.000621 * 3600;
+                        
+                      }
+                      </script>
+                              </div>
                 </div>
             </div>
+            </div>
         </div>
-        
-        
+        </div>
+
+
                         <!-- predition buttons and output-->
                         <br></br>
                         <br></br>
@@ -196,6 +228,10 @@
                             <div class="col-md-12">
                                 <h1 id="prediction"></h1>
                                 <img id="dummy" src="../static/images/wildfire.jpg">
+                                <!-- <video id="dummy" preload muted autoplay loop> 
+                                    <source src="C:\Users\danie\Classwork\Wildfires\static\images\fire_background_loop2_videvo2.mp4" type="video/mp4">
+                                    </video> -->
+
                             </div>
                         </div>
                         
