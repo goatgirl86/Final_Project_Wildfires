@@ -26,18 +26,73 @@
     
     <!-- Jumbotron -->
     <div class='container-fluid'>
-        <div class="jumbotron specialjum" style="color: #a0271f"> 
-            <h3 class='display-1'> Wildfires and determining its size </h3>
-            <h3>See what size of fire it will be</h3>
-            <p>Select your features then "CLICK to Calculate"</p>
-            <br>
+        <div class="jumbotron specialjum" style="color: #a0271f; background-color: coral"> 
+            <h3 class='display-1'> Predicting Fire Size </h3>
+            <p>See how big the next fire will be...</p>
+            <h3> 1) Convert your units from US to metric (if needed)</h3>
+            <h3> 2) Select your features then "CLICK to Calculate"</h3>
         </div>
       </div>    
-
-      
      
+<!-- Instructions to use converters -->
+<div class="container-fluid" style="color: black; background-color: white">
+    <h1>Unit Converion</h1>
+    <h6>Feature inputs below require the units of Celsius (for temperature) and meters/second (for wind speed). If needed, use these tools convert to the required units. </h6>
+    <br>
+    <div class="row">
+
+      <div class="col-sm-9">
+        
+
+
+<!-- Fahrenheit to Celsius converter -->
+            <div class="row">
+                <div class="col-8 col-sm-6">                
+<!-- <h4>Temperature Converter</h4> -->
+<!-- <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p> -->
+
+        <p>
+            <label>Fahrenheit:</label>
+            <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+        </p>
+        <p>Celsius: <span id="outputCelsius"></span></p>
+
+        <script>
+        function temperatureConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputCelsius").innerHTML=(valNum-32)/1.8;
+
+        }
+        </script>
+                </div>
+        
+        
+
+<!-- converter for meters to miles -->
+                <div class="col-4 col-sm-6">
+                    <p>
+                        <label>miles/hour:</label>
+                        <input id="inputmile" type="number" placeholder="miles/hour" oninput="meterConverter(this.value)" onchange="meterConverter(this.value)">
+                      </p>
+                      <p>meters/second: <span id="outputmeter"></span></p>
+                      
+                      <script>
+                      function meterConverter(valNum) {
+                        valNum = parseFloat(valNum);
+                        document.getElementById("outputmeter").innerHTML=(valNum)*0.44704;
+                        
+                      }
+                      </script>
+                              </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 <!-- start of selection & prediction form -->
 <div class='container-fluid text-white'>
+   <br>
+    <h1>Features</h1>
     <div class="row">
 
             <!--list for States-->
@@ -157,64 +212,14 @@
                     <label for="Hum_pre_7">Humidity (%):</label>
                     <br>
                     <input type="number" step="any" name="Hum_pre_7" id="Hum_pre_7">
+                    <br>
                 </div>  
             </div>
             <br><br>    
             
             
 
-<!-- Instructions to use converters -->
-<div class="container mt-5">
-    <div class="row">
-      <div class="col-sm-9">
-<h5>Please use converters to input the correct information for Current Temperature and Current Wind Speed</h5>
 
-
-
-<!-- Fahrenheit to Celsius converter -->
-            <div class="row">
-                <div class="col-8 col-sm-6">                
-<!-- <h4>Temperature Converter</h4> -->
-<!-- <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p> -->
-
-        <p>
-            <label>Fahrenheit</label>
-            <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
-        </p>
-        <p>Celsius: <span id="outputCelsius"></span></p>
-
-        <script>
-        function temperatureConverter(valNum) {
-            valNum = parseFloat(valNum);
-            document.getElementById("outputCelsius").innerHTML=(valNum-32)/1.8;
-
-        }
-        </script>
-                </div>
-        
-        
-
-<!-- converter for meters to miles -->
-                <div class="col-4 col-sm-6">
-                    <p>
-                        <label>meter/second</label>
-                        <input id="inputmeter" type="number" placeholder="meter/second" oninput="meterConverter(this.value)" onchange="meterConverter(this.value)">
-                      </p>
-                      <p>mile/hour: <span id="outputmile"></span></p>
-                      
-                      <script>
-                      function meterConverter(valNum) {
-                        valNum = parseFloat(valNum);
-                        document.getElementById("outputmile").innerHTML=(valNum)*0.000621 * 3600;
-                        
-                      }
-                      </script>
-                              </div>
-                </div>
-            </div>
-            </div>
-        </div>
-        </div>
 
 
                         <!-- predition buttons and output-->
@@ -222,11 +227,16 @@
                         <br></br>
 
                         <div class="col-md-12">
+                            <br>
                             <button onclick="make_pred()" class='btn btn-outline-danger btn-lg'>CLICK to Calculate</button>
-                            <button onClick="window.location.reload();" class='btn btn-outline-danger btn-lg'>Refresh Selections</button>
+                            <button onClick="window.location.reload(true);" class='btn btn-outline-danger btn-lg'>Refresh Selections</button>
                             <button onclick="history.back()" class='btn btn-outline-danger btn-lg'>Go Back to Home Page</button>
                             <div class="col-md-12">
-                                <h1 id="prediction"></h1>
+                                <br>
+                                <hr style="background-color:white">
+                                <h1> Your Result... </h1>
+                                <h6> Populates only after entering feature inputs and pressing "CLICK to Calculate" </h6>
+                                <h2 id="prediction"></h2>
                                 <img id="dummy" src="../static/images/wildfire.jpg">
                                 <!-- <video id="dummy" preload muted autoplay loop> 
                                     <source src="C:\Users\danie\Classwork\Wildfires\static\images\fire_background_loop2_videvo2.mp4" type="video/mp4">
@@ -238,9 +248,12 @@
                 </div>
             </div>
             <br><br>
-
+        </div>
+    </div>
 
 </div>  
+
+
 
 <!-- Optional JavaScript; choose one of the two! -->
 
