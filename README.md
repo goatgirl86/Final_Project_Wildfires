@@ -102,7 +102,7 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 
 ![image](https://user-images.githubusercontent.com/92705556/168187077-49326184-59f4-4a25-a4ed-b9abe56baf0e.png)
 
-**NOTE: Neural Networking using OneHot Encoder resulted in the highest accuracy percentage at 78.87%. However, with accuracy score of 77.96%, Logistic Regression using OneHot Encoder came at a close second best. Because overfitting and underfitting is a common concern with deep neural networking, we elected to go with the simpler Logistic Regression model for deployment of our prediction tool.**
+**NOTE: In the end, we decided to go with Easy Ensemble Classifer using Label Encoder for our prediction tool. This model had a accuracy score and was easier to merge with our web app than some of the other models.**
 
 ## Database
 To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our database, we have four main tables that are all connected through a common field: 'fire_id'. The original four tables were: fire_category, fire_info, fire_location, and weather_data. Using SQLAlchemy and Python, we then queried and joined information from the four original tables to create new tables.
@@ -119,11 +119,21 @@ To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our dat
 
 
 ## Dashboard
-To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows a user to run user inputs through our Machine Learning model to predict whether a medium-sized fire or larger will result in the next 7 days.  
+To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows a user to run user inputs through our Machine Learning model to predict whether a fire 50 acres or larger will result in the next 7 days.  
 
 ***Sreenshot 12**: Page 1 of Tableau story showing map of U.S. wildfires from 1992-2015 with interactive filters*
 
 ![image](https://user-images.githubusercontent.com/92705556/168952535-4e2c2eeb-0401-477b-97f1-96d1c938d7a3.png)
+
+***Sreenshot 13**: Page 1 of our web app*
+
+![image](https://user-images.githubusercontent.com/92705556/169681887-04e5e3e2-f752-4ee1-aac1-89b45577d855.png)
+
+***Sreenshot 14 (group)**: Page 2 of our web app*
+
+![image](https://user-images.githubusercontent.com/92705556/169681945-f5d6fafe-dc48-4c11-9b2f-459135f506ce.png)
+
+![image](https://user-images.githubusercontent.com/92705556/169681976-641f6bb4-3264-4ac8-b638-147b700f03e1.png)
 
 
 ## Conclusions
