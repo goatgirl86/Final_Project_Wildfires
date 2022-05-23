@@ -156,7 +156,7 @@ Additionally, we hope our model results can help fire prevention teams request a
 **Climate change affects us all and needs to be a topic of discussion at all levels of government and public forum.** Tools like this one that are easy to understand and bring pertinent issues to the forefront are needed to bring us all in the fight for a more stable future.
 
 ## Credits
-***This project was created in March - May 2022 as part of a Final Project for the University of Denver's Data Analytics BootCamp (a Trilogy Education Services program).*** 
+***This project was created in 2022 as part of a Final Project for the University of Denver's Data Analytics BootCamp (a Trilogy Education Services program).*** 
 - Team k.E.G.d. wishes to thank our instructor, Svitlana, and our T.A.s, James, Sheri, and Simon, for all their assistance on this project.  
 - Credit is also due to Team Lizard People, and their Conspiracy Theory project, for inspiration when our coding struggles got real.
 - Lastly, without DU’s Data Analytics Bootcamp, this team, our friendship, and our project wouldn’t even exist!!!
