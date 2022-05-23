@@ -129,13 +129,15 @@ To make the dashboard, we used our knowledge of HTML and Javascript to create a 
 
 ***Sreenshot 13**: Page 1 of our web app*
 
-![image](https://user-images.githubusercontent.com/92705556/169681887-04e5e3e2-f752-4ee1-aac1-89b45577d855.png)
-![image](https://user-images.githubusercontent.com/92705556/168952535-4e2c2eeb-0401-477b-97f1-96d1c938d7a3.png)
+![image](https://user-images.githubusercontent.com/92705556/169740219-c7ab6c14-69aa-4342-8abf-553d0d82e840.png)
+![image](https://user-images.githubusercontent.com/92705556/169740262-ffa99341-0193-4cd5-8f7a-d0841ab34757.png)
+![image](https://user-images.githubusercontent.com/92705556/169740309-e282f04e-fb19-4a3e-bd56-fa6780726ff3.png)
+
 
 ***Sreenshot 14 (group)**: Page 2 of our web app*
 
-![image](https://user-images.githubusercontent.com/92705556/169681945-f5d6fafe-dc48-4c11-9b2f-459135f506ce.png)
-![image](https://user-images.githubusercontent.com/92705556/169682344-d80e6460-760d-4286-851b-66c6a0735752.png)
+![image](https://user-images.githubusercontent.com/92705556/169740360-cc603d56-e4c6-4811-85d9-7791d147f063.png)
+![image](https://user-images.githubusercontent.com/92705556/169740396-8aad755b-1ef1-411e-bce9-fb6400cbb0b5.png)
 
 
 ## Conclusions
@@ -153,3 +155,8 @@ Additionally, we hope our model results can help fire prevention teams request a
 
 **Climate change affects us all and needs to be a topic of discussion at all levels of government and public forum.** Tools like this one that are easy to understand and bring pertinent issues to the forefront are needed to bring us all in the fight for a more stable future.
 
+## Credits
+***This project was created in March - May 2022 as part of a Final Project for the University of Denver's Data Analytics BootCamp (a Trilogy Education Services program).*** 
+- Team k.E.G.d. wishes to thank our instructor, Svitlana, and our T.A.s, James, Sheri, and Simon, for all their assistance on this project.  
+- Credit is also due to Team Lizard People, and their Conspiracy Theory project, for inspiration when our coding struggles got real.
+- Lastly, without DU’s Data Analytics Bootcamp, this team, our friendship, and our project wouldn’t even exist!!!
