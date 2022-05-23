@@ -6,7 +6,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 ![image](https://user-images.githubusercontent.com/92705556/164362996-733acdf8-498c-4ec8-83fc-886dc000c433.png)
 
 ## Project Visualizations
-- **Web App**: coming soon
+- **Web App**: *See "Dashboard" section below*
 - **Tableau**: *https://public.tableau.com/shared/M9HQJBKBQ?:display_count=n&:origin=viz_share_link*
 - **Google Slides Presentation**: *https://docs.google.com/presentation/d/1k6_nFs06r_e-iALVW8RSOxMYcdh0ALGk/edit?usp=sharing&ouid=108250606024172523210&rtpof=true&sd=true*
 
