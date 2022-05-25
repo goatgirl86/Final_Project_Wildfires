@@ -150,13 +150,13 @@ Just as predicting the weather is notoriously challenging even for the professio
 - Increase in fire size may be a result of increase in temperatures during the study period.  
 
 **Real Life Applications**
+
 With our fire prediction and visualization tool, first responders may address
 - Asset relocation
 - Early containment
 - Possible evacuation areas
 - **Prevent future loss of life and minimize property damage** 
-
-Additionally, we hope our model results can help fire prevention teams request additional resource and funding support from local, state, federal sources. Tableau map visualizations could also highlight highly affected areas that need attention. 
+- Additionally, we hope our model results can help fire prevention teams request additional resource and funding support from local, state, federal sources. Tableau map visualizations could also highlight highly affected areas that need attention. 
 
 ### As the climate change crisis now creates conditions that are deteriorating and causing worse destruction, having the capability to determine potential fire size is essential.
 
