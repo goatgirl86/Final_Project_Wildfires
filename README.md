@@ -106,7 +106,8 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 
 ***Sreenshot 10**: Supervised Machine Learning Accuracy Results (using Label Encoder)*
 
-![image](https://user-images.githubusercontent.com/92705556/168187077-49326184-59f4-4a25-a4ed-b9abe56baf0e.png)
+![image](https://user-images.githubusercontent.com/92705556/170169236-00e58144-994f-4a40-b6b3-a2fe06629178.png)
+
 
 **NOTE: In the end, we decided to go with Easy Ensemble Classifer using Label Encoder for our prediction tool. This model had a accuracy score and was easier to merge with our web app than some of the other models.**
 
