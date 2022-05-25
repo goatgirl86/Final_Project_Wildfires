@@ -110,3 +110,32 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import seaborn as sb
 import numpy as np
+
+---------------
+X-Scalar / Joblib
+---
+EE_XScalar.ipynb
+-
+import numpy as np
+import pandas as pd
+from sklearn.model_selection import train_test_split
+from sklearn.preprocessing import StandardScaler
+from sklearn.metrics import balanced_accuracy_score
+from sklearn.preprocessing import OneHotEncoder
+from pathlib import Path
+from sklearn.preprocessing import StandardScaler
+from imblearn.ensemble import EasyEnsembleClassifier
+
+from sklearn.metrics import confusion_matrix
+from imblearn.metrics import classification_report_imbalanced
+
+import joblib
+
+---------------
+Data Transfer
+---
+data_transfer.py
+-
+import pandas as pd
+import numpy as np
+import joblib
