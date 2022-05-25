@@ -144,6 +144,12 @@ To make the dashboard, we used our knowledge of HTML and Javascript to create a 
 ## Conclusions
 Just as predicting the weather is notoriously challenging even for the professionals, predicting wildfires is also difficult due to varying weather conditions and unpredictable human behavior.  Once a fire sparks, the ability of it to be contained quickly depends not only on weather but also on response times, resource allocation and capacity, and much more.  
 
+**Analytical Conclusion**
+- The size of fires has steadily increased over the 23 year period.
+- The total square acreage of burned area has hit a 23 year high in 2015.  
+- Increase in fire size may be a result of increase in temperatures during the study period.  
+
+**Real Life Applications**
 With our fire prediction and visualization tool, first responders may address
 - Asset relocation
 - Early containment
