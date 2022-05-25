@@ -26,7 +26,7 @@
     
     <!-- Jumbotron -->
     <div class='container-fluid'>
-        <div class="jumbotron specialjum" style="color: #a0271f; background-color: coral"> 
+        <div class="jumbotron specialjum" style="color: #a0271f;"> 
             <h3 class='display-1'> Predicting Fire Size </h3>
             <p>See how big the next fire will be...</p>
             <h3> 1) Convert your units from US to metric (if needed)</h3>
@@ -37,7 +37,7 @@
      
 <!-- Instructions to use converters -->
 <div class="container-fluid" style="color: black; background-color: white">
-    <h1>Unit Converion</h1>
+    <h1>Unit Conversion</h1>
     <h6>Feature inputs below require the units of Celsius (for temperature) and meters/second (for wind speed). If needed, use these tools convert to the required units. </h6>
     <br>
     <div class="row">
@@ -232,9 +232,16 @@
                             <button onclick="make_pred()" class='btn btn-outline-danger btn-lg'>CLICK to Calculate</button>
                             <button onClick="window.location.reload(true);" class='btn btn-outline-danger btn-lg'>Refresh Selections</button>
                             <button onclick="history.back()" class='btn btn-outline-danger btn-lg'>Go Back to Home Page</button>
-                            <div class="col-md-12">
-                                <br>
+                            <br>
+                            <br>
+                        </div>
+                            <div class="container-fluid">
                                 <hr style="background-color:white">
+                              
+                                <div class="row">
+                                     <div class="col-md-6">
+            
+                            
                                 <h1> Your Result... </h1>
                                 <h6> Populates only after entering feature inputs and pressing "CLICK to Calculate" </h6>
                                 <h2 id="prediction"></h2>
@@ -242,7 +249,22 @@
                                 <!-- <video id="dummy" preload muted autoplay loop> 
                                     <source src="C:\Users\danie\Classwork\Wildfires\static\images\fire_background_loop2_videvo2.mp4" type="video/mp4">
                                     </video> -->
-
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="col-md-6">
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <img id="dummy" src="../static/images/Real_Life.png">
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div class="container-fluid">
+                                        <hr style="background-color:white">
+                                      <p style= "font-style: italic"> *Note: This web app was created in May 2022 as part of a Final Project for the University of Denver's Data Analytics BootCamp (a Trilogy Education Services program).
+                                        </p>
+                                      </div>
                             </div>
                         </div>
                         
