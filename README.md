@@ -6,9 +6,9 @@ An Analysis of U.S. Wildfires from 1992-2015
 ![image](https://user-images.githubusercontent.com/92705556/164362996-733acdf8-498c-4ec8-83fc-886dc000c433.png)
 
 ## Project Visualizations
-- **Web App**: coming soon
+- **Web App**: *See "Dashboard" section below*
 - **Tableau**: *https://public.tableau.com/shared/M9HQJBKBQ?:display_count=n&:origin=viz_share_link*
-- **Google Slides Presentation**: *https://docs.google.com/presentation/d/1k6_nFs06r_e-iALVW8RSOxMYcdh0ALGk/edit?usp=sharing&ouid=108250606024172523210&rtpof=true&sd=true*
+- **Google Slides Presentation**: *https://docs.google.com/presentation/d/e/2PACX-1vRcpefueeL0hf7W42UyXHPVGJ4oJcOoGwTu4AZiRIH_-beuVVj-dWq7IrlwUGHWFlr_si-9TXeTJbFG/embed?start=false&loop=false&delayms=3000*
 
 ## Project Overview
 ### Purpose
@@ -125,20 +125,19 @@ To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our dat
 
 
 ## Dashboard
-To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows a user to run user inputs through our Machine Learning model to predict whether a fire 50 acres or larger will result in the next 7 days.  
+To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows page visitors to run user inputs through our Machine Learning model to predict whether a fire 50 acres or larger will result in the next 7 days.  
 
-***Sreenshot 13**: Page 1 of Tableau story showing map of U.S. wildfires from 1992-2015 with interactive filters*
+***Sreenshot 13**: Page 1 of our web app*
 
-![image](https://user-images.githubusercontent.com/92705556/168952535-4e2c2eeb-0401-477b-97f1-96d1c938d7a3.png)
+![image](https://user-images.githubusercontent.com/92705556/170163543-025acf1b-bbff-4d31-a6f3-be7feaeebb9e.png)
+![image](https://user-images.githubusercontent.com/92705556/170163404-1327c862-ec69-4632-9a42-9b057b3c97f2.png)
+![image](https://user-images.githubusercontent.com/92705556/170163686-e9c2b28b-9a52-4c54-8e37-e4f2734f8d90.png)
 
-***Sreenshot 14**: Page 1 of our web app*
 
-![image](https://user-images.githubusercontent.com/92705556/169681887-04e5e3e2-f752-4ee1-aac1-89b45577d855.png)
+***Sreenshot 14 (group)**: Page 2 of our web app*
 
-***Sreenshot 15 (group)**: Page 2 of our web app*
-
-![image](https://user-images.githubusercontent.com/92705556/169681945-f5d6fafe-dc48-4c11-9b2f-459135f506ce.png)
-![image](https://user-images.githubusercontent.com/92705556/169682344-d80e6460-760d-4286-851b-66c6a0735752.png)
+![image](https://user-images.githubusercontent.com/92705556/170163240-2ebb4f92-6074-4628-b043-d74d6a5a9057.png)
+![image](https://user-images.githubusercontent.com/92705556/169740396-8aad755b-1ef1-411e-bce9-fb6400cbb0b5.png)
 
 
 ## Conclusions
@@ -156,3 +155,8 @@ Additionally, we hope our model results can help fire prevention teams request a
 
 **Climate change affects us all and needs to be a topic of discussion at all levels of government and public forum.** Tools like this one that are easy to understand and bring pertinent issues to the forefront are needed to bring us all in the fight for a more stable future.
 
+## Credits
+***This project was created in 2022 as part of a Final Project for the University of Denver's Data Analytics BootCamp (a Trilogy Education Services program).*** 
+- Team k.E.G.d. wishes to thank our instructor, Svitlana, and our T.A.s, James, Sheri, and Simon, for all their assistance on this project.  
+- Credit is also due to Team Lizard People, and their Conspiracy Theory project, for inspiration when our coding struggles got real.
+- Lastly, without DU’s Data Analytics Bootcamp, this team, our friendship, and our project wouldn’t even exist!!!
