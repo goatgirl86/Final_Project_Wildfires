@@ -129,8 +129,8 @@ To make the dashboard, we used our knowledge of HTML and Javascript to create a 
 
 ***Sreenshot 13**: Page 1 of our web app*
 
-![image](https://user-images.githubusercontent.com/92705556/169740219-c7ab6c14-69aa-4342-8abf-553d0d82e840.png)
-![image](https://user-images.githubusercontent.com/92705556/169740262-ffa99341-0193-4cd5-8f7a-d0841ab34757.png)
+![image](https://user-images.githubusercontent.com/92705556/170163543-025acf1b-bbff-4d31-a6f3-be7feaeebb9e.png)
+![image](https://user-images.githubusercontent.com/92705556/170163404-1327c862-ec69-4632-9a42-9b057b3c97f2.png)
 ![image](https://user-images.githubusercontent.com/92705556/170163097-cdd0c439-e472-46f0-8674-ab5b004f43e6.png)
 
 
