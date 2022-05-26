@@ -22,5 +22,7 @@ def custome_transfer_func(test_data):
     return(X_scaled)
     
 
+    
+
 
 
