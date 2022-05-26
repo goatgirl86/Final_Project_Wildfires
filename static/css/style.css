@@ -1,0 +1,148 @@
+/* text with background video */
+/* .container{
+  height: 400px;
+  width: 100vw;
+  position: relative;
+}
+.container iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.container h1{
+  mix-blend-mode: multiply;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  font-size: 10rem;
+  background-color: #000;
+  color: #fff;
+} */
+
+
+/* jumbotron */
+.spacer{
+  height: 10px //however much space you want between elements
+  content: "";
+}
+.jumbotron{  
+  padding: 0;
+}
+.jumbotron img {
+  opacity: 0.3;
+  position: fixed;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+.jumbotron .container {
+  padding: 15px;
+}
+
+
+/* powwerwpoint */
+.responsive-google-slides {
+  position: fixed;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+.responsive-google-slides iframe {
+  border: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.wrapper
+{
+  padding-bottom: 20px;
+}
+
+
+
+/* button with link to Github */
+.button {
+  background-color: #f44336; /* Red */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #f44336;
+}
+
+.button:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+
+
+
+
+
+
+
+
+
+/* body {
+    background-image: url("../images/wildfire_1.jpg");
+    /* background-size: 100% 100%; */
+    /* color: #f7f7f7; */
+  /* }
+  /* .jumbotron {
+    background-image: url("../images/COwildfire1.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+    font-family: Georgia, serif;
+  } */
+
+
+/* 
+  body {
+    color: #000000;
+  } */
+  /* .jumbotron {
+    background-image: url("../images/COwildfire.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+  } */ */
+  
+  
+/* 
+  body {
+    color: #f7f7f7;
+  }
+  .jumbotron {
+    background-image: url("../images/COwildfire2.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+  } */
+  
+ 
+  
+
+  /* body {
+    color: #f7f7f7;
+  }
+  .jumbotron {
+    background-image: url("../images/wildfire_1.jpg");
+    background-size: 100% 100%;
+    text-align: center;
+  /* } */

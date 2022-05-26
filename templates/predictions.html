@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/prediction_style.css">
+
+    <title>Wildfires Predictions</title>
+
+    <style>
+      img {
+      max-width: 100%;
+      height: 25em;
+}
+    </style>
+  </head>
+  <body>
+<div class="container-fluid bg-dark">
+<!-- <div class="container"> -->
+
+
+    
+    <!-- Jumbotron -->
+    <div class='container-fluid'>
+        <div class="jumbotron specialjum" style="color: #a0271f;"> 
+            <h3 class='display-1'> Predicting Fire Size </h3>
+            <p>See how big the next fire will be...</p>
+            <h3> 1) Convert your units from US to metric (if needed)</h3>
+            <h3> 2) Select your features and then "CLICK to Calculate"</h3>
+            <h3> 3) View your results: Is your fire <50 acres or >50 acres?</h3>
+        </div>
+      </div>    
+     
+<!-- Instructions to use converters -->
+<div class="container-fluid" style="color: black; background-color: white">
+    <h1>Unit Conversion</h1>
+    <h6>Feature inputs below require the units of Celsius (for temperature) and meters/second (for wind speed). If needed, use these tools convert to the required units. </h6>
+    <br>
+    <div class="row">
+
+      <div class="col-sm-9">
+        
+
+
+<!-- Fahrenheit to Celsius converter -->
+            <div class="row">
+                <div class="col-8 col-sm-6">                
+<!-- <h4>Temperature Converter</h4> -->
+<!-- <p>Type a value in the Fahrenheit field to convert the value to Celsius:</p> -->
+
+        <p>
+            <label>Fahrenheit:</label>
+            <input id="inputFahrenheit" type="number" placeholder="Fahrenheit" oninput="temperatureConverter(this.value)" onchange="temperatureConverter(this.value)">
+        </p>
+        <p>Celsius: <span id="outputCelsius"></span></p>
+
+        <script>
+        function temperatureConverter(valNum) {
+            valNum = parseFloat(valNum);
+            document.getElementById("outputCelsius").innerHTML=(valNum-32)/1.8;
+
+        }
+        </script>
+                </div>
+        
+        
+
+<!-- converter for meters to miles -->
+                <div class="col-4 col-sm-6">
+                    <p>
+                        <label>miles/hour:</label>
+                        <input id="inputmile" type="number" placeholder="miles/hour" oninput="meterConverter(this.value)" onchange="meterConverter(this.value)">
+                      </p>
+                      <p>meters/second: <span id="outputmeter"></span></p>
+                      
+                      <script>
+                      function meterConverter(valNum) {
+                        valNum = parseFloat(valNum);
+                        document.getElementById("outputmeter").innerHTML=(valNum)*0.44704;
+                        
+                      }
+                      </script>
+                              </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- start of selection & prediction form -->
+<div class='container-fluid text-white'>
+   <br>
+    <h1>Features</h1>
+    <div class="row">
+
+            <!--list for States-->
+            <div class="col-md-3">
+                <div class="input">
+                    <br>
+                    <label for="state">Your State</label>
+                    <br>
+                    <select id="state" name="state">
+                        <option selected value="">Please Make A Selection:</option>
+                        <option value="1">AK</option>
+                        <option value="2">AL</option>
+                        <option value="3">AR</option>
+                        <option value="4">AZ</option>
+                        <option value="5">CA</option>
+                        <option value="6">CO</option>
+                        <option value="7">FL</option>
+                        <option value="8">GA</option>
+                        <option value="9">IA</option>
+                        <option value="10">ID</option>
+                        <option value="11">IL</option>
+                        <option value="12">IN</option>
+                        <option value="13">KS</option>
+                        <option value="14">KY</option>
+                        <option value="15">LA</option>
+                        <option value="16">MA</option>
+                        <option value="17">MD</option>
+                        <option value="18">ME</option>
+                        <option value="19">MI</option>
+                        <option value="20">MN</option>
+                        <option value="21">MO</option>
+                        <option value="22">MS</option>
+                        <option value="23">MT</option>
+                        <option value="24">NC</option>
+                        <option value="25">ND</option>
+                        <option value="26">NE</option>
+                        <option value="27">NJ</option>
+                        <option value="28">NM</option>
+                        <option value="29">NV</option>
+                        <option value="30">NY</option>
+                        <option value="31">OH</option>
+                        <option value="32">OK</option>
+                        <option value="33">OR</option>
+                        <option value="34">PA</option>
+                        <option value="35">PR</option>
+                        <option value="36">SC</option>
+                        <option value="37">SD</option>
+                        <option value="38">TN</option>
+                        <option value="39">TX</option>
+                        <option value="40">UT</option>
+                        <option value="41">VA</option>
+                        <option value="42">WA</option>
+                        <option value="43">WI</option>
+                        <option value="44">WV</option>
+                        <option value="45">WY</option>
+                    
+                        </select>
+                </div>
+            </div>
+            <br><br>
+            
+            <!--list for Months-->
+            <div class="col-md-3">
+                <div class="form-input" id="religion_input">
+                    <br>
+                    <label for="discovery_month">The discovery month:</label>
+                    <br>
+                    <select name="discovery_month" id="discovery_month">
+                        <option selected value="1">Please Make A Selection:</option>
+                        <option value="1">Jan</option>
+                        <option value="2">Feb</option>
+                        <option value="3">Mar</option>
+                        <option value="4">Apr</option>
+                        <option value="5">May</option>
+                        <option value="6">Jun</option>
+                        <option value="7">Jul</option>
+                        <option value="8">Aug</option>
+                        <option value="9">Sep</option>
+                        <option value="10">Oct</option>
+                        <option value="11">Nov</option>
+                        <option value="12">Dec</option>
+                    </select> 
+                </div>
+            </div>
+            <br><br>
+
+            <!--list for Temp-->
+            <div class="col-md-3">
+                <div class="form-input">
+                    <br>
+                    <label for="Temp_pre_7"> Current Temperature (Celsius):</label>
+                    <br>
+                    
+                    <input type="number" step="any" name="Temp_pre_7" id="Temp_pre_7">
+                        
+
+                    
+                </div>  
+            </div>
+            <br><br>
+
+            <!--list for Wind-->
+            <div class="col-md-3">
+                <div class="form-input" >
+                    <br>
+                    <label for="Wind_pre_7">Current Wind speed (meter/second):</label>
+                    <br>
+                    <input type="number" step="any" name="Wind_pre_7" id="Wind_pre_7">
+                </div>  
+            </div>
+            <br><br>
+
+            <!--list for Hum-->
+            <div class="col-md-3">
+                <div class="form-input" >
+                    <br>
+                    <label for="Hum_pre_7">Humidity (%):</label>
+                    <br>
+                    <input type="number" step="any" name="Hum_pre_7" id="Hum_pre_7">
+                    <br>
+                </div>  
+            </div>
+            <br><br>    
+            
+            
+
+
+
+
+                        <!-- predition buttons and output-->
+                        <br></br>
+                        <br></br>
+
+                        <div class="col-md-12">
+                            <br>
+                            <button onclick="make_pred()" class='btn btn-outline-danger btn-lg'>CLICK to Calculate</button>
+                            <button onClick="window.location.reload(true);" class='btn btn-outline-danger btn-lg'>Refresh Selections</button>
+                            <button onclick="history.back()" class='btn btn-outline-danger btn-lg'>Go Back to Home Page</button>
+                            <br>
+                            <br>
+                        </div>
+                            <div class="container-fluid">
+                                <hr style="background-color:white">
+                              
+                                <div class="row">
+                                     <div class="col-md-6">
+            
+                            
+                                <h1> Your Result... </h1>
+                                <h6> Populates only after entering feature inputs and pressing "CLICK to Calculate" </h6>
+                                <h2 id="prediction"></h2>
+                                <img id="dummy" src="../static/images/wildfire.jpg">
+                                <!-- <video id="dummy" preload muted autoplay loop> 
+                                    <source src="C:\Users\danie\Classwork\Wildfires\static\images\fire_background_loop2_videvo2.mp4" type="video/mp4">
+                                    </video> -->
+                                    </div>
+                                    <br>
+                                    <br>
+                                    <div class="col-md-6">
+                                        <br>
+                                        <br>
+                                        <br>
+                                        <img id="dummy" src="../static/images/Real_Life.png">
+                                        <br>
+                                        <br>
+                                    </div>
+                                    <div class="container-fluid">
+                                        <hr style="background-color:white">
+                                      <p style= "font-style: italic"> *Note: This web app was created in May 2022 as part of a Final Project for the University of Denver's Data Analytics BootCamp (a Trilogy Education Services program).
+                                        </p>
+                                      </div>
+                            </div>
+                        </div>
+                        
+                </div>
+            </div>
+            <br><br>
+        </div>
+    </div>
+
+</div>  
+
+
+
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="static/js/appE.js"></script>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+-->
+
+
+    </body>
+</html>    
