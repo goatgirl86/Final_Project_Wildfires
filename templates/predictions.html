@@ -7,7 +7,9 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-    <link rel="stylesheet" href="static/css/prediction_style.css">
+    <!-- <link rel="stylesheet" href="static/css/prediction_style.css"> -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/prediction_style.css') }}">
+
 
     <title>Wildfires Predictions</title>
 
@@ -26,7 +28,7 @@
     
     <!-- Jumbotron -->
     <div class='container-fluid'>
-        <div class="jumbotron specialjum" style="color: #a0271f;"> 
+        <div class="jumbotron specialjum" style="color: white; font-weight: bold"> 
             <h3 class='display-1'> Predicting Fire Size </h3>
             <p>See how big the next fire will be...</p>
             <h3> 1) Convert your units from US to metric (if needed)</h3>
@@ -243,7 +245,8 @@
             
                             
                                 <h1> Your Result... </h1>
-                                <h6> Populates only after entering feature inputs and pressing "CLICK to Calculate" </h6>
+                                <h6 style="font-weight: bold, font-decoration: underline"> Populates only after entering feature inputs and pressing "CLICK to Calculate".</h6>
+                                <p style=font-style:italic> A result of 0 means your fire will be "less than 50 acres"; 1 means your fire will be "greater than 50 acres"</h6>
                                 <h2 id="prediction"></h2>
                                 <img id="dummy" src="../static/images/wildfire.jpg">
                                 <!-- <video id="dummy" preload muted autoplay loop> 
@@ -256,13 +259,15 @@
                                         <br>
                                         <br>
                                         <br>
-                                        <img id="dummy" src="../static/images/Real_Life.png">
+                                        <br>
+                                        <br> <br>
+                                        <img id="dummy" src="../static/images/Real_Life.PNG">
                                         <br>
                                         <br>
                                     </div>
                                     <div class="container-fluid">
                                         <hr style="background-color:white">
-                                      <p style= "font-style: italic"> *Note: This web app was created in May 2022 as part of a Final Project for the University of Denver's Data Analytics BootCamp (a Trilogy Education Services program).
+                                      <p style= "font-style: italic"> *Note: This web app was created in May 2022 as part of a Final Project for the University of Denver's Data Analytics BootCamp (a Trilogy Education Services program). It is NOT intended to provide real life predictions.
                                         </p>
                                       </div>
                             </div>
@@ -281,18 +286,19 @@
 <!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-<script src="static/js/appE.js"></script>
-<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script> -->
+<!-- <script src="static/js/appE.js"></script> -->
+<script src="{{ url_for('static', filename='js/appE.js') }}"></script>
+<!-- <script src="https://cdn.plot.ly/plotly-latest.min.js"></script> -->
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
             integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
             crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
             crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
-<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="https://d3js.org/d3.v7.min.js"></script> -->
 <!-- Option 2: Separate Popper and Bootstrap JS -->
 <!--
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

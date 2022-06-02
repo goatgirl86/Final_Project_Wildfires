@@ -1,20 +1,19 @@
+from calendar import month
 from flask import Flask, jsonify, render_template, request
 import joblib
 import pandas as pd
-import numpy as np
 from data_transfer import custome_transfer_func
-from imblearn.ensemble import EasyEnsembleClassifier
-from sklearn.preprocessing import StandardScaler
+
 
 app = Flask(__name__)
 
 
-@app.route("/", methods=["GET", 'POST'])
+@app.route("/")
 def index():
     return render_template("index.html")
 
 
-@app.route("/predict", methods=["GET", "POST"])
+@app.route("/predict/", methods=["GET", "POST"])
 def predict():
     output = "Your value here!"
     #If you have the user submit a form
@@ -61,6 +60,7 @@ def predict():
         #print(pred)
         #print("*********")
         # Transfer test_data to normalized data
+       
         normalized_data = custome_transfer_func(test_data)
         pred = model.predict(normalized_data)
         print("*********")
@@ -69,6 +69,29 @@ def predict():
         return jsonify({"Prediction": int(pred[0])})
 
     return render_template('predictions.html', output=output)
+
+@app.route('/api/prediction')
+def prediction():
+    state = request.args.get('state')
+    month = request.args.get("month")
+    temp = request.args.get("temp")
+    wind = request.args.get("wind")
+    humid = request.args.get("humid")
+
+    columns = ["state","discovery_month","Temp_pre_7","Wind_pre_7","Hum_pre_7",]
+    test_data = pd.DataFrame(
+        [[state, month, float(temp),float(wind),float(humid),]], 
+        columns=columns
+    )
+    print("====")
+    print(test_data)
+
+    model = joblib.load('model_joblib_ee.joblib')
+    normalized_data = custome_transfer_func(test_data)
+    pred = model.predict(normalized_data)
+   
+    # return render_template('predictions.html', output=output)
+    return jsonify({"Prediction": int(pred[0])})
 
 
 if __name__ == "__main__":
