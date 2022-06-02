@@ -134,13 +134,14 @@ To make the dashboard, we used our knowledge of HTML and Javascript to create a 
 
 ![image](https://user-images.githubusercontent.com/92705556/170163543-025acf1b-bbff-4d31-a6f3-be7feaeebb9e.png)
 ![image](https://user-images.githubusercontent.com/92705556/170163404-1327c862-ec69-4632-9a42-9b057b3c97f2.png)
-![image](https://user-images.githubusercontent.com/92705556/171562303-bbb20317-dd67-4e94-ae50-c44d6a4cd52c.png)
+![image](https://user-images.githubusercontent.com/92705556/171564204-cf7ace24-5c47-40fe-ad6e-88edc7790690.png)
 
 
 ***Sreenshot 14 (group)**: Page 2 of our web app*
 
 ![image](https://user-images.githubusercontent.com/92705556/171562151-255e45f0-a0df-4c1b-8d89-53cdbeb4f070.png)
-![image](https://user-images.githubusercontent.com/92705556/171562211-bd707c7a-773f-4cbc-978d-12f3fdacf583.png)
+![image](https://user-images.githubusercontent.com/92705556/171564095-8fe8e4ef-ff6f-487a-a82a-0bed04fb2fbc.png)
+
 
 
 ## Conclusions
