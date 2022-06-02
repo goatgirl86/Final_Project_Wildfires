@@ -110,7 +110,7 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 ![image](https://user-images.githubusercontent.com/92705556/170169236-00e58144-994f-4a40-b6b3-a2fe06629178.png)
 
 
-**NOTE: In the end, we decided to go with Easy Ensemble Classifer using Label Encoder for our prediction tool. This model had a accuracy score and was easier to merge with our web app than some of the other models.**
+**NOTE: In the end, we decided to go with Easy Ensemble Classifer using Label Encoder for our prediction tool. This model had a high accuracy score and was easier to merge with our web app than some of the other models.**
 
 ## Database
 To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our database, we have four main tables that are all connected through a common field: 'fire_id'. The original four tables were: fire_category, fire_info, fire_location, and weather_data. Using SQLAlchemy and Python, we then queried and joined information from the four original tables to create new tables.
