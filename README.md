@@ -1,5 +1,5 @@
 # Scorched!
-An Analysis of U.S. Wildfires from 1992-2015
+A Final Project Analysis of U.S. Wildfires from 1992-2015
 
 ### By: k.E.G.d. (Katlin, Enzo, Graham, Danieli)
 
