@@ -6,7 +6,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 ![image](https://user-images.githubusercontent.com/92705556/164362996-733acdf8-498c-4ec8-83fc-886dc000c433.png)
 
 ## Project Visualizations
-- **Web App**: *See "Dashboard" section below*
+- **Web App**: *https://salty-depths-05618.herokuapp.com/*
 - **Tableau**: *https://public.tableau.com/shared/M9HQJBKBQ?:display_count=n&:origin=viz_share_link*
 - **Google Slides Presentation**: *https://docs.google.com/presentation/d/e/2PACX-1vRcpefueeL0hf7W42UyXHPVGJ4oJcOoGwTu4AZiRIH_-beuVVj-dWq7IrlwUGHWFlr_si-9TXeTJbFG/embed?start=false&loop=false&delayms=3000*
 
@@ -127,6 +127,7 @@ To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our dat
 
 ## Dashboard
 To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows page visitors to run user inputs through our Machine Learning model to predict whether a fire 50 acres or larger will result in the next 7 days.  
+ - https://salty-depths-05618.herokuapp.com/
 
 ***Sreenshot 13**: Page 1 of our web app*
 
@@ -151,7 +152,7 @@ Just as predicting the weather is notoriously challenging even for the professio
 
 **Real Life Applications**
 
-With our fire prediction and visualization tool, first responders may address
+With a fire prediction and visualization tool like ours, first responders may address
 - Asset relocation
 - Early containment
 - Possible evacuation areas
