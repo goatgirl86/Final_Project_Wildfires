@@ -7,7 +7,7 @@ An Analysis of U.S. Wildfires from 1992-2015
 
 ## Project Visualizations
 - **Web App**: *https://salty-depths-05618.herokuapp.com/*
-    - Web App GitHub (includes web application files only): https://github.com/goatgirl86/wildfire_deploy1.git
+    - Web App GitHub (includes web application files only): *https://github.com/goatgirl86/wildfire_deploy1.git*
 - **Tableau**: *https://public.tableau.com/shared/M9HQJBKBQ?:display_count=n&:origin=viz_share_link*
 - **Google Slides Presentation**: *https://docs.google.com/presentation/d/e/2PACX-1vRcpefueeL0hf7W42UyXHPVGJ4oJcOoGwTu4AZiRIH_-beuVVj-dWq7IrlwUGHWFlr_si-9TXeTJbFG/embed?start=false&loop=false&delayms=3000*
 
