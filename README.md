@@ -6,7 +6,8 @@ An Analysis of U.S. Wildfires from 1992-2015
 ![image](https://user-images.githubusercontent.com/92705556/164362996-733acdf8-498c-4ec8-83fc-886dc000c433.png)
 
 ## Project Visualizations
-- **Web App**: *See "Dashboard" section below*
+- **Web App**: *https://salty-depths-05618.herokuapp.com/*
+    - Web App GitHub (includes web application files only): *https://github.com/goatgirl86/wildfire_deploy1.git*
 - **Tableau**: *https://public.tableau.com/shared/M9HQJBKBQ?:display_count=n&:origin=viz_share_link*
 - **Google Slides Presentation**: *https://docs.google.com/presentation/d/e/2PACX-1vRcpefueeL0hf7W42UyXHPVGJ4oJcOoGwTu4AZiRIH_-beuVVj-dWq7IrlwUGHWFlr_si-9TXeTJbFG/embed?start=false&loop=false&delayms=3000*
 
@@ -106,7 +107,8 @@ Using our knowledge of Supervised and Unsupervised Machine Learning, we ran seve
 
 ***Sreenshot 10**: Supervised Machine Learning Accuracy Results (using Label Encoder)*
 
-![image](https://user-images.githubusercontent.com/92705556/168187077-49326184-59f4-4a25-a4ed-b9abe56baf0e.png)
+![image](https://user-images.githubusercontent.com/92705556/170169236-00e58144-994f-4a40-b6b3-a2fe06629178.png)
+
 
 **NOTE: In the end, we decided to go with Easy Ensemble Classifer using Label Encoder for our prediction tool. This model had a accuracy score and was easier to merge with our web app than some of the other models.**
 
@@ -126,6 +128,7 @@ To create our Database, we chose to use PgAdmin and SQL Alchemy.  Within our dat
 
 ## Dashboard
 To make the dashboard, we used our knowledge of HTML and Javascript to create a stylish web app that includes background information, wildfire photos, interactive visualizations of our Tableau and Google Slides, and a "Predict Your Fire" page.  The prediction page allows page visitors to run user inputs through our Machine Learning model to predict whether a fire 50 acres or larger will result in the next 7 days.  
+ - https://salty-depths-05618.herokuapp.com/
 
 ***Sreenshot 13**: Page 1 of our web app*
 
@@ -143,20 +146,26 @@ To make the dashboard, we used our knowledge of HTML and Javascript to create a 
 ## Conclusions
 Just as predicting the weather is notoriously challenging even for the professionals, predicting wildfires is also difficult due to varying weather conditions and unpredictable human behavior.  Once a fire sparks, the ability of it to be contained quickly depends not only on weather but also on response times, resource allocation and capacity, and much more.  
 
-With our fire prediction and visualization tool, first responders may address
+**Analytical Conclusions**
+- The size of fires has steadily increased over the 23 year period.
+- The total square acreage of burned area has hit a 23 year high in 2015.  
+- Increase in fire size may be a result of increase in temperatures during the study period.  
+
+**Real Life Applications**
+
+With a fire prediction and visualization tool like ours, first responders may address
 - Asset relocation
 - Early containment
 - Possible evacuation areas
 - **Prevent future loss of life and minimize property damage** 
-
-Additionally, we hope our model results can help fire prevention teams request additional resource and funding support from local, state, federal sources. Tableau map visualizations could also highlight highly affected areas that need attention. 
+- Additionally, we hope our model results can help fire prevention teams request additional resource and funding support from local, state, federal sources. Tableau map visualizations could also highlight highly affected areas that need attention. 
 
 ### As the climate change crisis now creates conditions that are deteriorating and causing worse destruction, having the capability to determine potential fire size is essential.
 
 **Climate change affects us all and needs to be a topic of discussion at all levels of government and public forum.** Tools like this one that are easy to understand and bring pertinent issues to the forefront are needed to bring us all in the fight for a more stable future.
 
 ## Credits
-***This project was created in 2022 as part of a Final Project for the University of Denver's Data Analytics BootCamp (a Trilogy Education Services program).*** 
+***This project was created in 2022 as part of a Final Project for the University of Denver's Data Analytics BootCamp (a Trilogy Education Services program). It is NOT intended to provide real life predictions.*** 
 - Team k.E.G.d. wishes to thank our instructor, Svitlana, and our T.A.s, James, Sheri, and Simon, for all their assistance on this project.  
 - Credit is also due to Team Lizard People, and their Conspiracy Theory project, for inspiration when our coding struggles got real.
 - Lastly, without DU’s Data Analytics Bootcamp, this team, our friendship, and our project wouldn’t even exist!!!
