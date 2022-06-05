@@ -5,6 +5,9 @@ A Final Project Analysis of U.S. Wildfires from 1992-2015
 
 ![image](https://user-images.githubusercontent.com/92705556/164362996-733acdf8-498c-4ec8-83fc-886dc000c433.png)
 
+## Summary of Project
+“Scorched!” is Team k.E.G.d.’s (Katlin, Enzo, Graham, and Danieli) final analysis project on U.S. Wildfires from 1992-2015.  Using Python / Pandas, PostgreSQL / PgAdmin, Tableau, and Javascript our team assessed and visually displayed trends in the data over time, including filters for year, state, month, fire size, and fire cause.  Applying our skills in Supervised Machine Learning with the Easy Ensemble Classifier model, we also created a tool that can predict whether a fire would grow to more than 50 acres based on user inputs of state, month, temperature, wind, and humidity.  Overall, fire size has increased since the early ‘90s, and, with climate forecasts projecting a hotter and drier future, the occurrence of massive wildfires is likely to continue.  
+
 ## Project Visualizations
 - **Web App**: *https://salty-depths-05618.herokuapp.com/*
     - Web App GitHub (includes web application files only): *https://github.com/goatgirl86/wildfire_deploy1.git*
